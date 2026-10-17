@@ -2,6 +2,8 @@ import xml.etree.ElementTree as ET
 import os
 
 
+from datasets import Dataset
+
 # les IDs pour le nouveau testament
 NOUVEAU_TESTAMENT = {
     "b.MAT",
@@ -59,22 +61,21 @@ languages = ["French", "English", "Arabic", "Finnish", "German"]
 original_files = {language : os.path.join(os.curdir,"bibles",f"{language}.xml") for language in languages}
 
 corpuses = {language: extract_new_testament(path) for language, path in original_files.items()}
-shared_ids = set.intersection(*(set(corpus) for corpus in corpuses.values())) #explication?
+shared_ids = set.intersection(*(set(corpus) for corpus in corpuses.values())) 
 filtered_corpus = {
     language: {verse_id: corpus[verse_id] for verse_id in sorted(shared_ids)}
     for language, corpus in corpuses.items()
 }
 
-for language in languages:
-    with open( os.path.join(os.curdir,"treated_corpus",f"{language}.txt") ) as f:
-    
 
-
-
-
-
-
-
-
-
-
+shared_ids = sorted(shared_ids)
+dataset_dict = {
+    "verse_id": shared_ids,
+    "English": [filtered_corpus["English"][id] for id in shared_ids],
+    "French": [filtered_corpus["French"][id] for id in shared_ids],
+    "German": [filtered_corpus["German"][id] for id in shared_ids],
+    "Finnish": [filtered_corpus["Finnish"][id] for id in shared_ids],
+    "Arabic": [filtered_corpus["Arabic"][id] for id in shared_ids],
+}
+# on peut finalement n'importer que cela (voir le fichier BPE_tokenizer.py)
+dataset = Dataset.from_dict(dataset_dict)
