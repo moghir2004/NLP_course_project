@@ -3,7 +3,7 @@ from tokenizers.models import BPE
 from tokenizers.pre_tokenizers import Whitespace
 from tokenizers.trainers import BpeTrainer
 
-from traitement_corpus import dataset
+from traitement_corpus import dataset #À REMPLACER PAR LIRE LES FICHIERS
 
 french_tokenizer_2k = Tokenizer(BPE(unk_token="[UNK]"))
 trainer = BpeTrainer(
@@ -13,7 +13,7 @@ french_tokenizer_2k.pre_tokenizer = Whitespace()
 
 
 def french_verse_iterator(dataset):
-    yield from dataset["french"]
+    yield from dataset["French"]
 
 
 french_tokenizer_2k.train_from_iterator(french_verse_iterator(dataset), trainer)
