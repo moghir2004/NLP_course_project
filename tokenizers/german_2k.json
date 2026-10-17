@@ -1,0 +1,9774 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[CLS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[SEP]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "[MASK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": {
+    "type": "NFKC"
+  },
+  "pre_tokenizer": {
+    "type": "Metaspace",
+    "replacement": "▁",
+    "prepend_scheme": "always",
+    "split": true
+  },
+  "post_processor": null,
+  "decoder": {
+    "type": "Metaspace",
+    "replacement": "▁",
+    "prepend_scheme": "always",
+    "split": true
+  },
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": "<unk>",
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "[UNK]": 0,
+      "[CLS]": 1,
+      "[SEP]": 2,
+      "[PAD]": 3,
+      "[MASK]": 4,
+      "\n": 5,
+      "!": 6,
+      "\"": 7,
+      "'": 8,
+      "(": 9,
+      ")": 10,
+      ",": 11,
+      "-": 12,
+      ".": 13,
+      ":": 14,
+      ";": 15,
+      "?": 16,
+      "A": 17,
+      "B": 18,
+      "C": 19,
+      "D": 20,
+      "E": 21,
+      "F": 22,
+      "G": 23,
+      "H": 24,
+      "I": 25,
+      "J": 26,
+      "K": 27,
+      "L": 28,
+      "M": 29,
+      "N": 30,
+      "O": 31,
+      "P": 32,
+      "Q": 33,
+      "R": 34,
+      "S": 35,
+      "T": 36,
+      "U": 37,
+      "V": 38,
+      "W": 39,
+      "Z": 40,
+      "a": 41,
+      "b": 42,
+      "c": 43,
+      "d": 44,
+      "e": 45,
+      "f": 46,
+      "g": 47,
+      "h": 48,
+      "i": 49,
+      "j": 50,
+      "k": 51,
+      "l": 52,
+      "m": 53,
+      "n": 54,
+      "o": 55,
+      "p": 56,
+      "q": 57,
+      "r": 58,
+      "s": 59,
+      "t": 60,
+      "u": 61,
+      "v": 62,
+      "w": 63,
+      "x": 64,
+      "y": 65,
+      "z": 66,
+      "{": 67,
+      "}": 68,
+      "Ä": 69,
+      "Ö": 70,
+      "Ü": 71,
+      "ß": 72,
+      "ä": 73,
+      "ö": 74,
+      "ü": 75,
+      "▁": 76,
+      "en": 77,
+      "er": 78,
+      "▁d": 79,
+      "ch": 80,
+      "nd": 81,
+      "ei": 82,
+      "▁s": 83,
+      "ie": 84,
+      "▁i": 85,
+      "▁u": 86,
+      "▁a": 87,
+      "▁w": 88,
+      "▁und": 89,
+      "es": 90,
+      "ein": 91,
+      "ich": 92,
+      "▁da": 93,
+      "st": 94,
+      "▁g": 95,
+      ".\n": 96,
+      "▁ih": 97,
+      "▁h": 98,
+      "et": 99,
+      "▁n": 100,
+      "▁die": 101,
+      "▁v": 102,
+      "▁G": 103,
+      "▁z": 104,
+      "▁der": 105,
+      "▁S": 106,
+      "el": 107,
+      "▁m": 108,
+      "em": 109,
+      "ber": 110,
+      "▁zu": 111,
+      "en,": 112,
+      "ll": 113,
+      "▁er": 114,
+      "icht": 115,
+      "▁au": 116,
+      "eu": 117,
+      "▁den": 118,
+      "te": 119,
+      "ng": 120,
+      "▁W": 121,
+      "ach": 122,
+      "▁H": 123,
+      "▁D": 124,
+      "ir": 125,
+      "▁ha": 126,
+      "▁ein": 127,
+      "ar": 128,
+      "▁nicht": 129,
+      "▁vo": 130,
+      "▁b": 131,
+      "▁sie": 132,
+      "ig": 133,
+      "hr": 134,
+      "▁U": 135,
+      "us": 136,
+      "ten": 137,
+      "▁daß": 138,
+      "▁J": 139,
+      "▁so": 140,
+      "▁das": 141,
+      "▁aber": 142,
+      "ben": 143,
+      "▁ist": 144,
+      "▁ge": 145,
+      "▁ihr": 146,
+      "▁in": 147,
+      "pr": 148,
+      "▁Und": 149,
+      "tt": 150,
+      "▁E": 151,
+      "▁M": 152,
+      "▁eu": 153,
+      "▁ihn": 154,
+      "▁ich": 155,
+      "▁wir": 156,
+      "it": 157,
+      "▁k": 158,
+      "ag": 159,
+      "t,": 160,
+      "as": 161,
+      "or": 162,
+      "au": 163,
+      "mm": 164,
+      "an": 165,
+      "▁auf": 166,
+      "▁un": 167,
+      "▁f": 168,
+      "▁von": 169,
+      "den": 170,
+      "ern": 171,
+      "▁T": 172,
+      "▁sein": 173,
+      "▁spr": 174,
+      "▁A": 175,
+      "▁dem": 176,
+      "and": 177,
+      "▁l": 178,
+      "▁B": 179,
+      "in": 180,
+      "sch": 181,
+      "ott": 182,
+      "▁L": 183,
+      "▁euch": 184,
+      "▁Gott": 185,
+      "▁du": 186,
+      "ter": 187,
+      "eh": 188,
+      "▁war": 189,
+      "e,": 190,
+      "▁sprach": 191,
+      "der": 192,
+      "▁all": 193,
+      "▁mit": 194,
+      "▁ver": 195,
+      "▁wer": 196,
+      "▁an": 197,
+      "▁K": 198,
+      "oh": 199,
+      "▁V": 200,
+      "▁des": 201,
+      "▁t": 202,
+      "▁F": 203,
+      "enn": 204,
+      "▁ihm": 205,
+      "ind": 206,
+      "lich": 207,
+      "al": 208,
+      "▁es": 209,
+      "am": 210,
+      "be": 211,
+      "▁hat": 212,
+      "en.\n": 213,
+      "▁ges": 214,
+      "▁P": 215,
+      "is": 216,
+      "▁Jes": 217,
+      "eit": 218,
+      "re": 219,
+      "▁sich": 220,
+      "▁denn": 221,
+      "cht": 222,
+      "▁uns": 223,
+      "ge": 224,
+      "▁auch": 225,
+      "▁I": 226,
+      "ah": 227,
+      "▁Z": 228,
+      "lei": 229,
+      "ing": 230,
+      "▁wird": 231,
+      "omm": 232,
+      "de": 233,
+      "▁wie": 234,
+      "▁Sch": 235,
+      "ls": 236,
+      "un": 237,
+      "ist": 238,
+      "ür": 239,
+      "▁St": 240,
+      "▁Da": 241,
+      "um": 242,
+      "ol": 243,
+      "gen": 244,
+      "▁ihnen": 245,
+      "ann": 246,
+      "ndern": 247,
+      "ro": 248,
+      "▁sei": 249,
+      "▁aus": 250,
+      "elch": 251,
+      "▁sind": 252,
+      "▁mein": 253,
+      "ER": 254,
+      "ERR": 255,
+      "▁N": 256,
+      "▁HERR": 257,
+      "eil": 258,
+      "▁sch": 259,
+      "▁Er": 260,
+      "▁Jesus": 261,
+      "ill": 262,
+      "▁sag": 263,
+      "rch": 264,
+      "ung": 265,
+      "ehr": 266,
+      "▁als": 267,
+      "ohn": 268,
+      "▁R": 269,
+      "▁Denn": 270,
+      "ang": 271,
+      "sen": 272,
+      "rie": 273,
+      "rü": 274,
+      "▁C": 275,
+      "iel": 276,
+      "und": 277,
+      "ft": 278,
+      "▁durch": 279,
+      "▁hin": 280,
+      "eg": 281,
+      "▁welch": 282,
+      "ör": 283,
+      "▁j": 284,
+      "och": 285,
+      "▁vor": 286,
+      "▁was": 287,
+      "▁Chr": 288,
+      "▁Christ": 289,
+      "▁werden": 290,
+      "tet": 291,
+      "▁soll": 292,
+      "▁ü": 293,
+      "▁Gottes": 294,
+      "eist": 295,
+      "on": 296,
+      "ahr": 297,
+      "imm": 298,
+      "▁o": 299,
+      "▁nach": 300,
+      "▁unter": 301,
+      "ensch": 302,
+      "▁über": 303,
+      "rei": 304,
+      "wor": 305,
+      "at": 306,
+      "det": 307,
+      "?\n": 308,
+      "lau": 309,
+      "etz": 310,
+      "▁Mensch": 311,
+      "▁mir": 312,
+      "bt": 313,
+      "ere": 314,
+      "er,": 315,
+      "▁Ge": 316,
+      "fen": 317,
+      "'s": 318,
+      "▁um": 319,
+      "se": 320,
+      "▁sondern": 321,
+      "▁will": 322,
+      "igen": 323,
+      "te,": 324,
+      "▁alle": 325,
+      "▁mich": 326,
+      "aus": 327,
+      "▁geh": 328,
+      "ck": 329,
+      "▁lie": 330,
+      "▁re": 331,
+      "ur": 332,
+      "▁Her": 333,
+      "▁Ich": 334,
+      "▁im": 335,
+      "ünd": 336,
+      "▁haben": 337,
+      "▁komm": 338,
+      "▁dein": 339,
+      "ben,": 340,
+      "▁bei": 341,
+      "▁st": 342,
+      "▁sprach:": 343,
+      "▁Sohn": 344,
+      "▁Wer": 345,
+      ";\n": 346,
+      "▁gesch": 347,
+      "▁HERRN": 348,
+      "▁viel": 349,
+      "▁eine": 350,
+      "▁einen": 351,
+      "!\n": 352,
+      "ater": 353,
+      "▁be": 354,
+      "▁kam": 355,
+      "▁Geist": 356,
+      "ehen": 357,
+      "▁Ges": 358,
+      "▁Vater": 359,
+      "reu": 360,
+      "▁nun": 361,
+      "▁Wei": 362,
+      "ab": 363,
+      "ut": 364,
+      "▁sel": 365,
+      "▁Tag": 366,
+      "il": 367,
+      "▁seine": 368,
+      "en:": 369,
+      "olk": 370,
+      "▁Es": 371,
+      "▁O": 372,
+      "▁ging": 373,
+      "▁ist,": 374,
+      "▁dar": 375,
+      "ien": 376,
+      "ne": 377,
+      "▁dies": 378,
+      "▁habe": 379,
+      "keit": 380,
+      "▁wo": 381,
+      "t.\n": 382,
+      "ra": 383,
+      "▁Volk": 384,
+      "ru": 385,
+      "twor": 386,
+      "pf": 387,
+      "eiß": 388,
+      "▁hör": 389,
+      "▁Wor": 390,
+      "üng": 391,
+      "eben": 392,
+      "▁für": 393,
+      "▁Sie": 394,
+      "▁Die": 395,
+      "▁dir": 396,
+      "▁Jüng": 397,
+      "bst": 398,
+      "e.\n": 399,
+      "▁dich": 400,
+      "▁ihm:": 401,
+      "▁So": 402,
+      "est": 403,
+      "dig": 404,
+      ",\n": 405,
+      "elt": 406,
+      "leich": 407,
+      "▁Menschen": 408,
+      "▁Himm": 409,
+      "komm": 410,
+      "▁Himmel": 411,
+      "ph": 412,
+      "▁Ju": 413,
+      "▁\"": 414,
+      "▁ward": 415,
+      "▁sah": 416,
+      "▁bin": 417,
+      "nis": 418,
+      "▁gen": 419,
+      "▁noch": 420,
+      "▁ihnen:": 421,
+      "den,": 422,
+      "▁seid": 423,
+      "▁Ver": 424,
+      "twortet": 425,
+      "isch": 426,
+      "eich": 427,
+      "▁oder": 428,
+      "ier": 429,
+      "lt": 430,
+      "et,": 431,
+      "ri": 432,
+      "▁nicht,": 433,
+      "acht": 434,
+      "▁et": 435,
+      "▁zum": 436,
+      "uch": 437,
+      "▁zw": 438,
+      "▁her": 439,
+      "amm": 440,
+      "ön": 441,
+      "▁Glau": 442,
+      "▁Was": 443,
+      "▁kein": 444,
+      "▁alles": 445,
+      "ff": 446,
+      "▁also": 447,
+      "ßen": 448,
+      "▁get": 449,
+      "amen": 450,
+      "igkeit": 451,
+      "eug": 452,
+      "▁tr": 453,
+      "▁To": 454,
+      "▁gew": 455,
+      "liche": 456,
+      "är": 457,
+      "▁seinen": 458,
+      "▁Kind": 459,
+      "ten,": 460,
+      "▁sol": 461,
+      "heit": 462,
+      "▁and": 463,
+      "▁gro": 464,
+      "▁Sünd": 465,
+      "▁Brü": 466,
+      "▁antwortet": 467,
+      "▁Jesu": 468,
+      "▁selbst": 469,
+      "en;": 470,
+      "teh": 471,
+      "▁geb": 472,
+      "ad": 473,
+      "ert": 474,
+      "uß": 475,
+      "auf": 476,
+      "▁sage": 477,
+      "os": 478,
+      "eten": 479,
+      "▁solch": 480,
+      "▁woll": 481,
+      "he,": 482,
+      "aul": 483,
+      "ul": 484,
+      "sten": 485,
+      "▁vom": 486,
+      "▁unser": 487,
+      "▁wenn": 488,
+      "▁einem": 489,
+      "▁Aber": 490,
+      "bar": 491,
+      "zen": 492,
+      "▁nie": 493,
+      "▁Gesetz": 494,
+      "▁Au": 495,
+      "▁nah": 496,
+      "▁Dar": 497,
+      "ffen": 498,
+      "ät": 499,
+      "geben": 500,
+      "s,": 501,
+      "▁sprachen:": 502,
+      "ohl": 503,
+      "▁Christus": 504,
+      "ster": 505,
+      "▁antwortete": 506,
+      "br": 507,
+      "▁ihre": 508,
+      "ühr": 509,
+      "ider": 510,
+      "▁am": 511,
+      "▁glau": 512,
+      "▁bes": 513,
+      "ige": 514,
+      "▁Ihr": 515,
+      "▁r": 516,
+      "eit,": 517,
+      "▁groß": 518,
+      "▁Haus": 519,
+      "▁Brüder": 520,
+      "▁Der": 521,
+      "▁Lie": 522,
+      "▁Jünger": 523,
+      "chte": 524,
+      "▁verk": 525,
+      "sel": 526,
+      "ngel": 527,
+      "▁Lei": 528,
+      "nde": 529,
+      "▁habt": 530,
+      "▁bis": 531,
+      "▁steh": 532,
+      "angen": 533,
+      "▁Christi": 534,
+      "ser": 535,
+      "▁Engel": 536,
+      "▁hatte": 537,
+      "aß": 538,
+      "▁andern": 539,
+      "lie": 540,
+      "▁Wahr": 541,
+      "aulus": 542,
+      "äu": 543,
+      "▁gel": 544,
+      "▁heil": 545,
+      "▁Welt": 546,
+      "▁einer": 547,
+      "▁aber,": 548,
+      "▁fr": 549,
+      "▁wis": 550,
+      "▁jem": 551,
+      "▁Wort": 552,
+      "\"\n": 553,
+      "nen": 554,
+      "rus": 555,
+      "set": 556,
+      "▁tun": 557,
+      "▁Werk": 558,
+      "▁zur": 559,
+      "gel": 560,
+      "mal": 561,
+      "▁mach": 562,
+      "▁Leben": 563,
+      "▁Glauben": 564,
+      "agt": 565,
+      "ehm": 566,
+      "▁jemand": 567,
+      "▁gleich": 568,
+      "▁mehr": 569,
+      "▁seiner": 570,
+      "▁hat,": 571,
+      "▁eur": 572,
+      "▁allen": 573,
+      "▁werdet": 574,
+      "erecht": 575,
+      "erst": 576,
+      "▁wür": 577,
+      "▁Heil": 578,
+      "▁Namen": 579,
+      "ze": 580,
+      "▁Das": 581,
+      "▁seinem": 582,
+      "roph": 583,
+      "▁Herr": 584,
+      "kommen": 585,
+      "le": 586,
+      "▁An": 587,
+      "▁Paulus": 588,
+      "mand": 589,
+      "▁wider": 590,
+      "ten.\n": 591,
+      "▁las": 592,
+      "▁br": 593,
+      "etrus": 594,
+      "▁Proph": 595,
+      "▁Petrus": 596,
+      "▁zwei": 597,
+      "▁Ph": 598,
+      "▁Juden": 599,
+      "▁wieder": 600,
+      "▁gewor": 601,
+      "▁hast": 602,
+      "▁nichts": 603,
+      "▁voll": 604,
+      "▁Flei": 605,
+      "▁man": 606,
+      "▁Bl": 607,
+      "▁Zeit": 608,
+      "▁meine": 609,
+      "▁redet": 610,
+      "▁Darum": 611,
+      ".\"\n": 612,
+      "äh": 613,
+      "ob": 614,
+      "ot": 615,
+      "eiden": 616,
+      "es,": 617,
+      "▁Jer": 618,
+      "▁vers": 619,
+      "▁Kne": 620,
+      "ent": 621,
+      "igt": 622,
+      "▁aller": 623,
+      "▁Gem": 624,
+      "▁Geb": 625,
+      "▁Weib": 626,
+      "▁gan": 627,
+      "▁spricht": 628,
+      "rieben": 629,
+      "prie": 630,
+      "▁werde": 631,
+      "▁ber": 632,
+      "▁Un": 633,
+      "▁waren": 634,
+      "▁gegeben": 635,
+      "▁Gott,": 636,
+      "alem": 637,
+      "▁Stad": 638,
+      "▁welcher": 639,
+      "▁welche": 640,
+      "usalem": 641,
+      "▁gef": 642,
+      "▁dieser": 643,
+      "▁nahm": 644,
+      "▁Jerusalem": 645,
+      "▁war,": 646,
+      "lichen": 647,
+      "sen,": 648,
+      "▁doch": 649,
+      "▁Reich": 650,
+      "▁niemand": 651,
+      "▁gesagt": 652,
+      "▁Mann": 653,
+      "▁sprachen": 654,
+      "▁etliche": 655,
+      "ün": 656,
+      "▁Hand": 657,
+      "tter": 658,
+      "▁Land": 659,
+      "▁Kön": 660,
+      "all": 661,
+      "de,": 662,
+      "▁weiß": 663,
+      "▁Freu": 664,
+      "▁Ä": 665,
+      "▁em": 666,
+      "▁ent": 667,
+      "▁Gn": 668,
+      "▁Schri": 669,
+      "he": 670,
+      "lein": 671,
+      "rä": 672,
+      "▁seh": 673,
+      "eln": 674,
+      "▁Joh": 675,
+      "▁Fleisch": 676,
+      "kenn": 677,
+      "wie": 678,
+      "▁bet": 679,
+      "▁kann": 680,
+      "ank": 681,
+      "▁Johann": 682,
+      "eli": 683,
+      "▁welchen": 684,
+      "esen": 685,
+      "ald": 686,
+      "olg": 687,
+      "▁kommen": 688,
+      "▁geschrieben": 689,
+      "ste": 690,
+      "▁wohl": 691,
+      "▁Hoh": 692,
+      "▁eure": 693,
+      "pel": 694,
+      "chten": 695,
+      "▁ab": 696,
+      "▁diese": 697,
+      "▁Bru": 698,
+      "▁sind,": 699,
+      "▁wur": 700,
+      "einand": 701,
+      "▁euch,": 702,
+      "▁verl": 703,
+      "▁kamen": 704,
+      "▁empf": 705,
+      "be,": 706,
+      "im": 707,
+      "zu": 708,
+      "aup": 709,
+      "ner": 710,
+      "▁erf": 711,
+      "▁tu": 712,
+      "anden": 713,
+      "▁viele": 714,
+      "▁ander": 715,
+      "▁solches": 716,
+      "▁bist": 717,
+      "▁euer": 718,
+      "▁Schrift": 719,
+      "▁Bruder": 720,
+      "▁pr": 721,
+      "▁wand": 722,
+      "▁Tem": 723,
+      "▁HERR,": 724,
+      "▁Liebe": 725,
+      "vor": 726,
+      "▁blei": 727,
+      "▁Tage": 728,
+      "ha": 729,
+      "▁(": 730,
+      "▁Tempel": 731,
+      "▁Hä": 732,
+      "net": 733,
+      "en,\n": 734,
+      "ern,": 735,
+      "▁allein": 736,
+      "▁Schw": 737,
+      "▁Gew": 738,
+      "▁Gemei": 739,
+      "fä": 740,
+      "fel": 741,
+      "her": 742,
+      "üll": 743,
+      "▁Ev": 744,
+      "▁Als": 745,
+      "▁Brüder,": 746,
+      "▁siehe,": 747,
+      "▁Re": 748,
+      "▁Christo": 749,
+      "ffenbar": 750,
+      "ade": 751,
+      "üt": 752,
+      "▁Wir": 753,
+      "▁ihren": 754,
+      "etzt": 755,
+      "▁getan": 756,
+      "▁Stimm": 757,
+      "einander": 758,
+      "▁Evang": 759,
+      "a,": 760,
+      "zig": 761,
+      "▁Geh": 762,
+      "▁hal": 763,
+      "än": 764,
+      "▁Bro": 765,
+      "▁jeg": 766,
+      "reich": 767,
+      "elium": 768,
+      "▁wurden": 769,
+      "▁Evangelium": 770,
+      "ieh": 771,
+      "itten": 772,
+      "▁Stadt": 773,
+      "ew": 774,
+      "fe": 775,
+      "rau": 776,
+      "▁gem": 777,
+      "ßt": 778,
+      "▁meinem": 779,
+      "▁verkünd": 780,
+      "äm": 781,
+      "▁gu": 782,
+      "te.\n": 783,
+      "▁ist.\n": 784,
+      "▁euch:": 785,
+      "▁deine": 786,
+      "▁darum": 787,
+      "▁andere": 788,
+      "▁Phar": 789,
+      "iff": 790,
+      "ose": 791,
+      "▁sehen": 792,
+      "▁Du": 793,
+      "▁König": 794,
+      "▁Gnade": 795,
+      "aupt": 796,
+      "pp": 797,
+      "agen": 798,
+      "▁Gesch": 799,
+      "bt,": 800,
+      "öl": 801,
+      "▁wahr": 802,
+      "▁leben": 803,
+      "▁Stund": 804,
+      "▁Kinder": 805,
+      "▁geworden": 806,
+      "ken": 807,
+      "ericht": 808,
+      "▁Is": 809,
+      "▁Erde": 810,
+      "▁richt": 811,
+      "▁Leib": 812,
+      "▁Johannes": 813,
+      "mah": 814,
+      "ost": 815,
+      "stern": 816,
+      "▁Teu": 817,
+      "isä": 818,
+      "▁hinaus": 819,
+      "▁Pharisä": 820,
+      "▁ang": 821,
+      "▁denen,": 822,
+      "▁Me": 823,
+      "itt": 824,
+      "üß": 825,
+      "end": 826,
+      "▁kön": 827,
+      "▁Ar": 828,
+      "lich,": 829,
+      "licher": 830,
+      "▁gesand": 831,
+      "bet": 832,
+      "hl": 833,
+      "▁dan": 834,
+      "▁sieben": 835,
+      "as,": 836,
+      "▁tut": 837,
+      "id": 838,
+      "chen": 839,
+      "eigen": 840,
+      "▁heiß": 841,
+      "▁Gerecht": 842,
+      "▁Wenn": 843,
+      "▁lehr": 844,
+      "▁Frie": 845,
+      "ohne": 846,
+      "▁offenbar": 847,
+      "▁kommt": 848,
+      "▁Hohen": 849,
+      "get": 850,
+      "mann": 851,
+      "▁le": 852,
+      "▁Auf": 853,
+      "priester": 854,
+      "▁Teufel": 855,
+      "ak": 856,
+      "▁ohne": 857,
+      "▁Heiden": 858,
+      "us,": 859,
+      "▁Ap": 860,
+      "ckt": 861,
+      "bald": 862,
+      "▁Wie": 863,
+      "▁haben,": 864,
+      "▁führ": 865,
+      "▁werden,": 866,
+      "▁schw": 867,
+      "▁gingen": 868,
+      "keit,": 869,
+      "nach": 870,
+      "▁Mar": 871,
+      "inn": 872,
+      "▁hatte,": 873,
+      "▁Zeug": 874,
+      "▁frag": 875,
+      "▁ew": 876,
+      "▁Ehr": 877,
+      "▁fiel": 878,
+      "des": 879,
+      "eder": 880,
+      "og": 881,
+      "erw": 882,
+      "▁Se": 883,
+      "▁muß": 884,
+      "▁Bar": 885,
+      "▁waren,": 886,
+      "▁liebe": 887,
+      ":\n": 888,
+      "▁drei": 889,
+      "ell": 890,
+      "▁eines": 891,
+      "▁Ein": 892,
+      "▁Klei": 893,
+      "ört": 894,
+      "▁Herz": 895,
+      "▁Stimme": 896,
+      "▁vier": 897,
+      "▁zuvor": 898,
+      "▁Will": 899,
+      "▁Ung": 900,
+      "orn": 901,
+      "▁Jesum": 902,
+      "▁steht": 903,
+      "▁Propheten": 904,
+      "hal": 905,
+      "eig": 906,
+      "▁Wein": 907,
+      "▁Mu": 908,
+      "▁Licht": 909,
+      "▁etw": 910,
+      "▁große": 911,
+      "nung": 912,
+      "▁dr": 913,
+      "▁wä": 914,
+      "▁ersch": 915,
+      "euer": 916,
+      "▁Män": 917,
+      "oren": 918,
+      "▁Am": 919,
+      "▁dem,": 920,
+      "▁leg": 921,
+      "▁Schiff": 922,
+      "▁sagen": 923,
+      "abb": 924,
+      "mals": 925,
+      "▁pre": 926,
+      "▁Meer": 927,
+      "geh": 928,
+      "off": 929,
+      "ete": 930,
+      "▁meinen": 931,
+      "rief": 932,
+      "ftig": 933,
+      "▁Herzen": 934,
+      "▁stand": 935,
+      "selben": 936,
+      "▁Apost": 937,
+      "läu": 938,
+      "▁dien": 939,
+      "▁Sim": 940,
+      "▁geben": 941,
+      "▁verf": 942,
+      "▁gesehen": 943,
+      "▁Gottes,": 944,
+      "▁Siehe,": 945,
+      "hm": 946,
+      "▁diesen": 947,
+      "▁Haupt": 948,
+      "▁ihrer": 949,
+      "▁gest": 950,
+      "ingen": 951,
+      "▁Vater,": 952,
+      "▁Wahrheit": 953,
+      "▁würde": 954,
+      "rt": 955,
+      "▁gekommen": 956,
+      "aum": 957,
+      "▁tö": 958,
+      "▁werden.\n": 959,
+      "▁Blut": 960,
+      "ges": 961,
+      "nte": 962,
+      "▁Zeich": 963,
+      "▁schl": 964,
+      "▁welches": 965,
+      "▁\"D": 966,
+      "▁Wasser": 967,
+      "▁gewesen": 968,
+      "▁Sünde": 969,
+      "läub": 970,
+      "▁nehm": 971,
+      "▁ist's": 972,
+      "▁Schul": 973,
+      "▁hinein": 974,
+      "rael": 975,
+      "▁keine": 976,
+      "▁erfüll": 977,
+      "▁Israel": 978,
+      "▁Zeugnis": 979,
+      "fahr": 980,
+      "öh": 981,
+      "▁Gr": 982,
+      "▁hatten": 983,
+      "▁ob": 984,
+      "▁Weis": 985,
+      "▁selig": 986,
+      "ischen": 987,
+      "▁Toten": 988,
+      "▁besch": 989,
+      "▁Simon": 990,
+      "eim": 991,
+      "▁wohn": 992,
+      "▁Gal": 993,
+      "▁mö": 994,
+      "▁seines": 995,
+      "inge": 996,
+      "▁sollen": 997,
+      "▁Ged": 998,
+      "▁heiligen": 999,
+      "gelehr": 1000,
+      "▁Schriftgelehr": 1001,
+      "▁Mutter": 1002,
+      "ucht": 1003,
+      "▁deinen": 1004,
+      "▁gleichwie": 1005,
+      "▁Knecht": 1006,
+      "ia": 1007,
+      "ers": 1008,
+      "▁wen": 1009,
+      "▁Sp": 1010,
+      "▁Wo": 1011,
+      "▁Ber": 1012,
+      "scha": 1013,
+      "▁Lehr": 1014,
+      "▁verst": 1015,
+      "ilä": 1016,
+      "▁beg": 1017,
+      "▁Jahr": 1018,
+      "aham": 1019,
+      "▁alsbald": 1020,
+      "unden": 1021,
+      "▁reden": 1022,
+      "braham": 1023,
+      "▁gesandt": 1024,
+      "sal": 1025,
+      "uhl": 1026,
+      "st,": 1027,
+      "eth": 1028,
+      "alt": 1029,
+      "▁welchem": 1030,
+      "▁sollt": 1031,
+      "▁untereinander": 1032,
+      "▁bew": 1033,
+      "▁Prophet": 1034,
+      "▁gere": 1035,
+      "▁zeug": 1036,
+      "▁Ha": 1037,
+      "▁abermals": 1038,
+      "▁Macht": 1039,
+      "▁Abraham": 1040,
+      "▁verw": 1041,
+      "▁Kra": 1042,
+      "▁sagen:": 1043,
+      "▁diesem": 1044,
+      "▁Augen": 1045,
+      "▁euren": 1046,
+      "▁ganze": 1047,
+      "digen": 1048,
+      "e;": 1049,
+      "ech": 1050,
+      "weil": 1051,
+      "▁Ü": 1052,
+      "▁Dien": 1053,
+      "▁alle,": 1054,
+      "▁an,": 1055,
+      "▁hat.\n": 1056,
+      "geb": 1057,
+      "▁Herrlich": 1058,
+      "▁brach": 1059,
+      "▁wäre": 1060,
+      "▁Galilä": 1061,
+      "aten": 1062,
+      "kt": 1063,
+      "sam": 1064,
+      "set,": 1065,
+      "▁such": 1066,
+      "▁gab": 1067,
+      "▁hät": 1068,
+      "▁neu": 1069,
+      "▁gegen": 1070,
+      "▁willen": 1071,
+      "▁Jud": 1072,
+      "▁Geschle": 1073,
+      "ger": 1074,
+      "heiß": 1075,
+      "▁Mund": 1076,
+      "▁wird,": 1077,
+      "▁Heiligen": 1078,
+      "▁Hohenpriester": 1079,
+      "akob": 1080,
+      "▁Apostel": 1081,
+      "▁rü": 1082,
+      "eid": 1083,
+      "▁setz": 1084,
+      "▁wei": 1085,
+      "▁Weg": 1086,
+      "hren": 1087,
+      "▁Jakob": 1088,
+      "▁lä": 1089,
+      "chtig": 1090,
+      "▁Erden": 1091,
+      "ung,": 1092,
+      "▁ließ": 1093,
+      "ltes": 1094,
+      "▁etwas": 1095,
+      "▁schrie": 1096,
+      "▁geschehen": 1097,
+      "ische": 1098,
+      "gt": 1099,
+      "▁Mose": 1100,
+      "▁auferst": 1101,
+      "▁frei": 1102,
+      "▁sein,": 1103,
+      "▁lang": 1104,
+      "▁sollst": 1105,
+      "▁sollte": 1106,
+      "▁recht": 1107,
+      "kommen,": 1108,
+      "dern": 1109,
+      "öll": 1110,
+      "▁zus": 1111,
+      "▁erl": 1112,
+      "eute": 1113,
+      "▁ins": 1114,
+      "▁Ew": 1115,
+      "▁Mein": 1116,
+      "▁auf,": 1117,
+      "▁Ka": 1118,
+      "▁gehört": 1119,
+      "▁sah,": 1120,
+      "▁unsers": 1121,
+      "ölf": 1122,
+      "▁predig": 1123,
+      "äter": 1124,
+      "▁Spr": 1125,
+      "▁ermah": 1126,
+      "▁Des": 1127,
+      "▁Meist": 1128,
+      "▁ihn,": 1129,
+      "▁wirst": 1130,
+      "▁kenn": 1131,
+      "orgen": 1132,
+      "erne": 1133,
+      "ehen,": 1134,
+      "▁Ist": 1135,
+      "annt": 1136,
+      "under": 1137,
+      "▁Christum": 1138,
+      "▁lieb": 1139,
+      "▁bef": 1140,
+      "▁bek": 1141,
+      "raten": 1142,
+      "▁trin": 1143,
+      "▁Seel": 1144,
+      "▁Kraft": 1145,
+      "wen": 1146,
+      "ieß": 1147,
+      "▁erkenn": 1148,
+      "▁Wel": 1149,
+      "ehe": 1150,
+      "▁Feuer": 1151,
+      "ungen": 1152,
+      "▁Gefä": 1153,
+      "▁Tod": 1154,
+      "▁wollte": 1155,
+      "▁Werke": 1156,
+      "▁Pharisäer": 1157,
+      "▁Gerechtigkeit": 1158,
+      "▁Zeichen": 1159,
+      "s.\n": 1160,
+      "öst": 1161,
+      "▁Gleich": 1162,
+      "▁sie,": 1163,
+      "▁El": 1164,
+      "geben,": 1165,
+      "▁Dav": 1166,
+      "▁bed": 1167,
+      "reuz": 1168,
+      "rucht": 1169,
+      "pfer": 1170,
+      "▁Jüngern": 1171,
+      "▁alles,": 1172,
+      "▁empfangen": 1173,
+      "▁Stunde": 1174,
+      "▁Ehre": 1175,
+      "ast": 1176,
+      "nden": 1177,
+      "▁wär": 1178,
+      "▁dah": 1179,
+      "▁hier": 1180,
+      "▁nimm": 1181,
+      "▁Gericht": 1182,
+      "▁erw": 1183,
+      "ache": 1184,
+      "▁nicht.\n": 1185,
+      "tten,": 1186,
+      "itte": 1187,
+      "▁fün": 1188,
+      "▁Füß": 1189,
+      "▁gesund": 1190,
+      "▁jen": 1191,
+      "▁Sünden": 1192,
+      "▁Ältes": 1193,
+      "▁Gemeinde": 1194,
+      "▁Ewigkeit": 1195,
+      "kte": 1196,
+      "▁rief": 1197,
+      "▁sit": 1198,
+      "▁zog": 1199,
+      "▁Sabb": 1200,
+      "igkeit,": 1201,
+      "▁Pf": 1202,
+      "issen": 1203,
+      "▁Menschen,": 1204,
+      "cken": 1205,
+      "▁trat": 1206,
+      "▁redete": 1207,
+      "▁David": 1208,
+      "gleich": 1209,
+      "leg": 1210,
+      "▁dieweil": 1211,
+      "▁Sel": 1212,
+      "▁Ang": 1213,
+      "▁Bes": 1214,
+      "▁verd": 1215,
+      "▁Zu": 1216,
+      "ausend": 1217,
+      "rank": 1218,
+      "will": 1219,
+      "zeit": 1220,
+      "▁Hoff": 1221,
+      "▁nicht;": 1222,
+      "▁find": 1223,
+      "▁freu": 1224,
+      "▁Gott.\n": 1225,
+      "▁versch": 1226,
+      "▁ihm.\n": 1227,
+      "▁Pil": 1228,
+      "ahl": 1229,
+      "▁Scha": 1230,
+      "▁Nun": 1231,
+      "▁Gottes.\n": 1232,
+      "▁lasset": 1233,
+      "▁Herrlichkeit": 1234,
+      "▁zusamm": 1235,
+      "nt": 1236,
+      "om": 1237,
+      "▁die,": 1238,
+      "▁erh": 1239,
+      "▁daß,": 1240,
+      "▁folg": 1241,
+      "geg": 1242,
+      "▁Stein": 1243,
+      "▁darin": 1244,
+      "▁Hände": 1245,
+      "▁Frieden": 1246,
+      "lä": 1247,
+      "sen.\n": 1248,
+      "üst": 1249,
+      "▁eigen": 1250,
+      "▁sand": 1251,
+      "▁ihrem": 1252,
+      "age": 1253,
+      "▁sein.\n": 1254,
+      "int": 1255,
+      "▁ihm,": 1256,
+      "eitet": 1257,
+      "▁Stuhl": 1258,
+      "▁sagte": 1259,
+      "rüb": 1260,
+      "▁Ober": 1261,
+      "▁fürcht": 1262,
+      "ärt": 1263,
+      "▁Pilat": 1264,
+      "von": 1265,
+      "äng": 1266,
+      "öß": 1267,
+      "▁ung": 1268,
+      "acht,": 1269,
+      "▁beh": 1270,
+      "▁Ma": 1271,
+      "▁meiner": 1272,
+      "▁sagt": 1273,
+      "▁geschah": 1274,
+      "▁beru": 1275,
+      "▁jeglicher": 1276,
+      "▁Ältesten": 1277,
+      "▁Hoffnung": 1278,
+      "heit,": 1279,
+      "ipp": 1280,
+      "ogen": 1281,
+      "t;": 1282,
+      "änd": 1283,
+      "eiten": 1284,
+      "esicht": 1285,
+      "▁erk": 1286,
+      "ig,": 1287,
+      "▁Trüb": 1288,
+      "▁war.\n": 1289,
+      "▁essen": 1290,
+      "▁überan": 1291,
+      "▁gehe": 1292,
+      "▁Hero": 1293,
+      "▁Sohn,": 1294,
+      "▁darauf": 1295,
+      "▁fünf": 1296,
+      "▁Angesicht": 1297,
+      "▁reich": 1298,
+      "▁gut": 1299,
+      "elbst": 1300,
+      "▁geg": 1301,
+      "▁Buß": 1302,
+      "▁traten": 1303,
+      "amt": 1304,
+      "▁sich,": 1305,
+      "▁HERRN,": 1306,
+      "▁bez": 1307,
+      "▁selber": 1308,
+      "▁darnach": 1309,
+      "▁hören": 1310,
+      "uldig": 1311,
+      "▁unserm": 1312,
+      "aßt": 1313,
+      "ähl": 1314,
+      "▁Also": 1315,
+      "▁Brot": 1316,
+      "▁gemacht": 1317,
+      "▁verkündig": 1318,
+      "▁Trübsal": 1319,
+      "az": 1320,
+      "ke": 1321,
+      "eise": 1322,
+      "achtet": 1323,
+      "▁ged": 1324,
+      "▁Vor": 1325,
+      "▁tat": 1326,
+      "▁Für": 1327,
+      "▁Nacht": 1328,
+      "▁schrei": 1329,
+      "▁Richt": 1330,
+      "▁wollen": 1331,
+      "▁rein": 1332,
+      "▁Christi,": 1333,
+      "getan": 1334,
+      "▁Pilatus": 1335,
+      "▁Ga": 1336,
+      "▁zer": 1337,
+      "▁daselbst": 1338,
+      "▁ihnen,": 1339,
+      "auft": 1340,
+      "▁lei": 1341,
+      "instern": 1342,
+      "▁Frucht": 1343,
+      "▁Finstern": 1344,
+      "▁Nam": 1345,
+      "▁jetzt": 1346,
+      "▁gehen": 1347,
+      "▁Verheiß": 1348,
+      "▁wisset,": 1349,
+      "▁tun,": 1350,
+      "haftig": 1351,
+      "äch": 1352,
+      "▁ger": 1353,
+      "▁hatten,": 1354,
+      "orben": 1355,
+      "▁Ab": 1356,
+      "▁Aus": 1357,
+      "▁schon": 1358,
+      "▁Ru": 1359,
+      "▁ja": 1360,
+      "etzten": 1361,
+      "▁star": 1362,
+      "uld": 1363,
+      "▁nahe": 1364,
+      "▁glaub": 1365,
+      "▁lassen": 1366,
+      "▁wandeln": 1367,
+      "▁zeugte": 1368,
+      "▁Finsternis": 1369,
+      "fang": 1370,
+      "mher": 1371,
+      "sag": 1372,
+      "chn": 1373,
+      "cht,": 1374,
+      "▁gerecht": 1375,
+      "▁zu,": 1376,
+      "▁habe,": 1377,
+      "assen": 1378,
+      "▁Tür": 1379,
+      "ehn": 1380,
+      "gef": 1381,
+      "▁Weiber": 1382,
+      "▁Phil": 1383,
+      "▁allerlei": 1384,
+      "allen": 1385,
+      "▁heißt": 1386,
+      "▁Männer": 1387,
+      "▁Geduld": 1388,
+      "▁rühm": 1389,
+      "ug": 1390,
+      "üs": 1391,
+      "▁ihr,": 1392,
+      "▁ich,": 1393,
+      "ord": 1394,
+      "orsam": 1395,
+      "▁Bö": 1396,
+      "▁Zw": 1397,
+      "▁Zorn": 1398,
+      "gend": 1399,
+      "▁deiner": 1400,
+      "▁deinem": 1401,
+      "▁Geist,": 1402,
+      "▁Worte": 1403,
+      "▁geboren": 1404,
+      "▁wissen": 1405,
+      "▁Gebo": 1406,
+      "▁Schriftgelehrten": 1407,
+      "▁geredet": 1408,
+      "▁Galiläa": 1409,
+      "▁Füße": 1410,
+      "▁zusammen": 1411,
+      "me": 1412,
+      "▁davon": 1413,
+      "▁hä": 1414,
+      "▁hieß": 1415,
+      "et.\n": 1416,
+      "▁Gel": 1417,
+      "▁zieh": 1418,
+      "▁War": 1419,
+      "▁Welch": 1420,
+      "▁ihn.\n": 1421,
+      "▁kon": 1422,
+      "▁Tier": 1423,
+      "▁All": 1424,
+      "ommen": 1425,
+      "undert": 1426,
+      "▁Hause": 1427,
+      "▁machen": 1428,
+      "▁Gleichnis": 1429,
+      "azar": 1430,
+      "oß": 1431,
+      "tnis": 1432,
+      "▁Gut": 1433,
+      "▁Glie": 1434,
+      "▁Sol": 1435,
+      "▁Hur": 1436,
+      "▁auferw": 1437,
+      "▁du,": 1438,
+      "▁allem": 1439,
+      "▁Kl": 1440,
+      "▁mir,": 1441,
+      "urcht": 1442,
+      "▁hörten,": 1443,
+      "▁wissen,": 1444,
+      "▁Knechte": 1445,
+      "kenntnis": 1446,
+      "▁tue": 1447,
+      "▁guten": 1448,
+      "edermann": 1449,
+      "▁Meister,": 1450,
+      "▁auferwe": 1451,
+      "mit": 1452,
+      "▁saß": 1453,
+      "▁samt": 1454,
+      "▁ar": 1455,
+      "▁wuß": 1456,
+      "▁nur": 1457,
+      "▁blie": 1458,
+      "bend": 1459,
+      "▁gegeben,": 1460,
+      "aufen": 1461,
+      "▁fu": 1462,
+      "▁fand": 1463,
+      "▁verb": 1464,
+      "▁unsern": 1465,
+      "▁meines": 1466,
+      "▁hinauf": 1467,
+      "▁Tagen": 1468,
+      "▁Volk,": 1469,
+      "▁herr": 1470,
+      "▁Auferst": 1471,
+      "▁begab": 1472,
+      "▁dahin": 1473,
+      "▁berufen": 1474,
+      "at,": 1475,
+      "glich": 1476,
+      "ret": 1477,
+      "ött": 1478,
+      "▁ru": 1479,
+      "▁sen": 1480,
+      "▁Sat": 1481,
+      "▁er's": 1482,
+      "euch": 1483,
+      "▁bö": 1484,
+      "ben.\n": 1485,
+      "▁gekommen,": 1486,
+      "▁klein": 1487,
+      "▁ferne": 1488,
+      "▁Buch": 1489,
+      "rüß": 1490,
+      "▁hörte": 1491,
+      "▁nieder": 1492,
+      "▁sehen,": 1493,
+      "▁Willen": 1494,
+      "▁legte": 1495,
+      "▁Welt,": 1496,
+      "dem": 1497,
+      "nehm": 1498,
+      "oll": 1499,
+      "ses": 1500,
+      "er.\n": 1501,
+      "▁weil": 1502,
+      "▁dazu": 1503,
+      "▁los": 1504,
+      "ter,": 1505,
+      "▁verg": 1506,
+      "▁Furcht": 1507,
+      "▁Jesus,": 1508,
+      "▁jedermann": 1509,
+      "▁willen,": 1510,
+      "▁allezeit": 1511,
+      "▁nahmen": 1512,
+      "▁Jahre": 1513,
+      "▁Sabbat": 1514,
+      "men": 1515,
+      "▁gr": 1516,
+      "▁ersten": 1517,
+      "▁sieh": 1518,
+      "▁gek": 1519,
+      "▁Ende": 1520,
+      "▁Fr": 1521,
+      "▁Fel": 1522,
+      "▁uns,": 1523,
+      "▁geht": 1524,
+      "▁ließen": 1525,
+      "▁Oder": 1526,
+      "▁solche": 1527,
+      "▁großer": 1528,
+      "▁Wahrlich,": 1529,
+      "▁eurem": 1530,
+      "▁Anfang": 1531,
+      "▁bring": 1532,
+      "▁ganz": 1533,
+      "▁Freude": 1534,
+      "▁Barmher": 1535,
+      "läubig": 1536,
+      "▁Geschlecht": 1537,
+      "▁Philipp": 1538,
+      "ege": 1539,
+      "ner,": 1540,
+      "äd": 1541,
+      "cher": 1542,
+      "▁ir": 1543,
+      "▁Sam": 1544,
+      "emal": 1545,
+      "ngnis": 1546,
+      "▁Wind": 1547,
+      "asset": 1548,
+      "ort": 1549,
+      "▁Teil": 1550,
+      "▁Be": 1551,
+      "▁Erkenntnis": 1552,
+      "▁hörte,": 1553,
+      "▁Dieser": 1554,
+      "▁verkl": 1555,
+      "▁ewige": 1556,
+      "▁Weisheit": 1557,
+      "▁wenig": 1558,
+      "▁Gefängnis": 1559,
+      "▁sandte": 1560,
+      "▁Aufersteh": 1561,
+      "ft,": 1562,
+      "öt": 1563,
+      "▁sehr": 1564,
+      "ied": 1565,
+      "▁gi": 1566,
+      "▁hing": 1567,
+      "▁hiel": 1568,
+      "▁ihr:": 1569,
+      "▁wir,": 1570,
+      "▁Abend": 1571,
+      "▁Väter": 1572,
+      "▁Prie": 1573,
+      "▁Rat": 1574,
+      "▁lieben": 1575,
+      "▁sahen": 1576,
+      "▁ganzen": 1577,
+      "▁werde.\n": 1578,
+      "▁bleibt": 1579,
+      "▁Rede": 1580,
+      "▁lebendig": 1581,
+      "▁Kleider": 1582,
+      "▁erschien": 1583,
+      "fahren": 1584,
+      "schaft": 1585,
+      "▁Buße": 1586,
+      "für": 1587,
+      "nten": 1588,
+      "▁Ö": 1589,
+      "▁är": 1590,
+      "▁weder": 1591,
+      "▁Ger": 1592,
+      "▁Sal": 1593,
+      "berg": 1594,
+      "auber": 1595,
+      "▁lau": 1596,
+      "▁Bet": 1597,
+      "schen": 1598,
+      "▁Lü": 1599,
+      "▁mitten": 1600,
+      "▁Krie": 1601,
+      "▁Fei": 1602,
+      "▁Schl": 1603,
+      "▁sei,": 1604,
+      "▁sind.\n": 1605,
+      "▁Or": 1606,
+      "▁Volks": 1607,
+      "▁zwölf": 1608,
+      "▁großen": 1609,
+      "selbe": 1610,
+      "▁empfang": 1611,
+      "▁gestorben": 1612,
+      "gleichen": 1613,
+      "intemal": 1614,
+      "▁Herodes": 1615,
+      "bei": 1616,
+      "fer": 1617,
+      "ick": 1618,
+      "yp": 1619,
+      "üßen": 1620,
+      "▁ster": 1621,
+      "▁Seh": 1622,
+      "▁macht": 1623,
+      "▁unv": 1624,
+      "alten": 1625,
+      "▁In": 1626,
+      "▁Nach": 1627,
+      "▁\"I": 1628,
+      "▁ward,": 1629,
+      "▁keinen": 1630,
+      "▁gewes": 1631,
+      "ossen": 1632,
+      "▁halten": 1633,
+      "▁Diener": 1634,
+      "▁hätte": 1635,
+      "▁lange": 1636,
+      "▁Hurer": 1637,
+      "kne": 1638,
+      "endet": 1639,
+      "▁sünd": 1640,
+      "▁acht": 1641,
+      "essen": 1642,
+      "einen": 1643,
+      "▁näm": 1644,
+      "eugen": 1645,
+      "achen": 1646,
+      "▁kund": 1647,
+      "▁flei": 1648,
+      "▁untert": 1649,
+      "▁überw": 1650,
+      "▁haben.\n": 1651,
+      "▁kommt,": 1652,
+      "▁Geistes": 1653,
+      "▁Tages": 1654,
+      "▁heraus": 1655,
+      "▁Christus,": 1656,
+      "▁Heilig": 1657,
+      "▁Amen.\n": 1658,
+      "▁verführ": 1659,
+      "▁überantwortet": 1660,
+      "▁größ": 1661,
+      "fl": 1662,
+      "üd": 1663,
+      "▁damit": 1664,
+      "▁heim": 1665,
+      "▁erz": 1666,
+      "▁erste": 1667,
+      "▁Hei": 1668,
+      "▁ich's": 1669,
+      "▁käm": 1670,
+      "▁teil": 1671,
+      "be.\n": 1672,
+      "▁Pre": 1673,
+      "▁wird's": 1674,
+      "▁lieber": 1675,
+      "▁kommen,": 1676,
+      "▁Vaters": 1677,
+      "▁dich,": 1678,
+      "▁Himmel,": 1679,
+      "▁Glaube": 1680,
+      "▁Darnach": 1681,
+      "▁glauben": 1682,
+      "▁versamm": 1683,
+      "▁Üb": 1684,
+      "▁Warum": 1685,
+      "▁Solch": 1686,
+      "▁Auferstehung": 1687,
+      "folg": 1688,
+      "ücht": 1689,
+      "ück": 1690,
+      "▁ehe": 1691,
+      "eis": 1692,
+      "▁weg": 1693,
+      "est,": 1694,
+      "▁bitt": 1695,
+      "▁Mit": 1696,
+      "▁Ti": 1697,
+      "ing,": 1698,
+      "ehrt": 1699,
+      "▁kam,": 1700,
+      "▁Ohren": 1701,
+      "▁Wort,": 1702,
+      "▁Diese": 1703,
+      "digt": 1704,
+      "▁Blind": 1705,
+      "▁Gebot": 1706,
+      "▁Gewalt": 1707,
+      "▁jeglichen": 1708,
+      "▁wahrlich": 1709,
+      "▁Friede": 1710,
+      "▁\"Du": 1711,
+      "▁verwunder": 1712,
+      "▁Über": 1713,
+      "▁Kais": 1714,
+      "▁Selig": 1715,
+      "▁Verheißung": 1716,
+      "▁Satan": 1717,
+      "iß": 1718,
+      "ias": 1719,
+      "ötet": 1720,
+      "erk": 1721,
+      "▁den,": 1722,
+      "▁derselben": 1723,
+      "▁Son": 1724,
+      "▁erg": 1725,
+      "▁denen": 1726,
+      "▁Dinge": 1727,
+      "▁Jose": 1728,
+      "mmer": 1729,
+      "▁fal": 1730,
+      "▁fing": 1731,
+      "▁Br": 1732,
+      "▁Bist": 1733,
+      "▁Lamm": 1734,
+      "▁Von": 1735,
+      "▁Zeit,": 1736,
+      "▁Stät": 1737,
+      "▁HERRN.\n": 1738,
+      "▁dieses": 1739,
+      "pfleg": 1740,
+      "▁Dies": 1741,
+      "▁sahen,": 1742,
+      "▁Kindlein": 1743,
+      "▁Wahrlich": 1744,
+      "▁hast,": 1745,
+      "▁sehet": 1746,
+      "erichtet": 1747,
+      "▁angen": 1748,
+      "▁dritten": 1749,
+      "▁ist's,": 1750,
+      "▁Seele": 1751,
+      "▁Krieg": 1752,
+      "▁Solches": 1753,
+      "),": 1754,
+      "aj": 1755,
+      "aben": 1756,
+      "att": 1757,
+      "fen,": 1758,
+      "zt": 1759,
+      "üchtig": 1760,
+      "▁rei": 1761,
+      "eicht": 1762,
+      "▁sech": 1763,
+      "▁Gro": 1764,
+      "▁Samen": 1765,
+      "▁Wege": 1766,
+      "▁bau": 1767,
+      "▁Al": 1768,
+      "▁Le": 1769,
+      "▁Lu": 1770,
+      "e,\n": 1771,
+      "▁Krank": 1772,
+      "▁treu": 1773,
+      "▁gesetzt": 1774,
+      "▁Nicht": 1775,
+      "▁hinf": 1776,
+      "egt": 1777,
+      "▁komme": 1778,
+      "▁\"S": 1779,
+      "▁bin,": 1780,
+      "▁seid,": 1781,
+      "▁getr": 1782,
+      "▁getötet": 1783,
+      "aufe": 1784,
+      "▁weiß,": 1785,
+      "▁tut,": 1786,
+      "▁lehrte": 1787,
+      "▁Speise": 1788,
+      "▁brachten": 1789,
+      "▁setzte": 1790,
+      "▁weiter": 1791,
+      "▁trink": 1792,
+      "gegangen": 1793,
+      "▁Barmherz": 1794,
+      "▁Philippus": 1795,
+      "▁nämlich": 1796,
+      "▁untertan": 1797,
+      "▁Joseph": 1798,
+      "don": 1799,
+      "ia,": 1800,
+      "oben": 1801,
+      "ser,": 1802,
+      "chte,": 1803,
+      "▁geist": 1804,
+      "▁hern": 1805,
+      "▁Grie": 1806,
+      "▁Gere": 1807,
+      "▁Sil": 1808,
+      "▁Sinn": 1809,
+      "elte": 1810,
+      "▁bald": 1811,
+      "▁sie.\n": 1812,
+      "ten;": 1813,
+      "▁gebe": 1814,
+      "▁kl": 1815,
+      "▁for": 1816,
+      "▁Tro": 1817,
+      "▁As": 1818,
+      "▁Lasset": 1819,
+      "▁vert": 1820,
+      "▁des,": 1821,
+      "liches": 1822,
+      "▁Städ": 1823,
+      "▁sei.\n": 1824,
+      "▁Nazar": 1825,
+      "▁sagen,": 1826,
+      "▁hinab": 1827,
+      "atz": 1828,
+      "atur": 1829,
+      "▁vielen": 1830,
+      "▁Himmelreich": 1831,
+      "▁Juden,": 1832,
+      "▁Verd": 1833,
+      "▁Tode": 1834,
+      "▁Sünder": 1835,
+      "▁selbst,": 1836,
+      "äup": 1837,
+      "▁heilig": 1838,
+      "▁machte": 1839,
+      "▁würden": 1840,
+      "▁Darum,": 1841,
+      "▁Jerusalem,": 1842,
+      "▁Lande": 1843,
+      "▁verleug": 1844,
+      "▁anderen": 1845,
+      "▁fragten": 1846,
+      "▁tötet": 1847,
+      "▁Spricht": 1848,
+      "▁nimmt": 1849,
+      "▁Öl": 1850,
+      "▁Barmherzigkeit": 1851,
+      ")\n": 1852,
+      "du": 1853,
+      "ond": 1854,
+      "ock": 1855,
+      "rer": 1856,
+      "ieg": 1857,
+      "eine": 1858,
+      "▁Seid": 1859,
+      "▁Dem": 1860,
+      "▁ihnen.\n": 1861,
+      "auch": 1862,
+      "▁fahr": 1863,
+      "▁fanden": 1864,
+      "▁Th": 1865,
+      "▁Lä": 1866,
+      "▁Leu": 1867,
+      "▁vergeben": 1868,
+      "▁Kreuz": 1869,
+      "▁jüd": 1870,
+      "▁will,": 1871,
+      "ild": 1872,
+      "▁habe.\n": 1873,
+      "kommen.\n": 1874,
+      "▁Glauben,": 1875,
+      "▁Jesu,": 1876,
+      "▁stehen": 1877,
+      "▁Gebet": 1878,
+      "▁Freund": 1879,
+      "▁Johannes,": 1880,
+      "nete": 1881,
+      "▁gute": 1882,
+      "▁offenbart": 1883,
+      "▁führte": 1884,
+      "▁Maria": 1885,
+      "▁fragte": 1886,
+      "▁Lehre": 1887,
+      "▁Munde": 1888,
+      "▁Obersten": 1889,
+      "▁\"Ich": 1890,
+      "▁Hurerei": 1891,
+      "▁Kriegs": 1892,
+      "fen.\n": 1893,
+      "gen,": 1894,
+      "gyp": 1895,
+      "nab": 1896,
+      "rg": 1897,
+      "rig": 1898,
+      "en.": 1899,
+      "▁wor": 1900,
+      "▁zogen": 1901,
+      "▁habt,": 1902,
+      "▁bl": 1903,
+      "▁bat": 1904,
+      "▁gez": 1905,
+      "▁Ehe": 1906,
+      "▁fl": 1907,
+      "▁Test": 1908,
+      "▁Tische": 1909,
+      "▁leiden": 1910,
+      "ehl": 1911,
+      "▁Fest": 1912,
+      "▁Füßen": 1913,
+      "▁unsre": 1914,
+      "▁schuldig": 1915,
+      "▁durchs": 1916,
+      "ört,": 1917,
+      "▁nun,": 1918,
+      "▁Weibe": 1919,
+      "▁Opfer": 1920,
+      "▁daran": 1921,
+      "▁genannt": 1922,
+      "▁wollt": 1923,
+      "▁heilige": 1924,
+      "▁geworden,": 1925,
+      "▁vollendet": 1926,
+      "▁Weib,": 1927,
+      "▁bereit": 1928,
+      "▁Ägyp": 1929,
+      "▁geschrieben:": 1930,
+      "▁Schwert": 1931,
+      "fält": 1932,
+      "▁können": 1933,
+      "▁Gerechtigkeit,": 1934,
+      "▁Barnab": 1935,
+      "▁Kleid": 1936,
+      "▁sitzen": 1937,
+      "▁Gutes": 1938,
+      "▁Sonne": 1939,
+      "▁hinfort": 1940,
+      "▁Nazareth": 1941,
+      "▁Testamen": 1942,
+      "da": 1943,
+      "führ": 1944,
+      "itter": 1945,
+      "ling": 1946,
+      "ren": 1947,
+      "ut,": 1948,
+      "ßig": 1949,
+      "äus": 1950,
+      "ächtig": 1951,
+      "üste": 1952,
+      "nde,": 1953,
+      "eige": 1954,
+      "▁samm": 1955,
+      "▁wein": 1956,
+      "▁Steh": 1957,
+      "▁Wit": 1958,
+      "▁Weh": 1959,
+      "▁Den": 1960,
+      "▁ihr's": 1961,
+      "▁Lohn": 1962,
+      "ehen.\n": 1963,
+      "▁verz": 1964,
+      "▁werde,": 1965,
+      "▁Frei": 1966,
+      "▁scha": 1967,
+      "▁mir:": 1968,
+      "▁stell": 1969,
+      "▁hören,": 1970,
+      "▁getauft": 1971,
+      "▁Brüdern": 1972,
+      "zedon": 1973,
+      "oth": 1974,
+      "▁spricht:": 1975,
+      "▁Gewissen": 1976,
+      "▁Gemeinden": 1977,
+      "▁lebendigen": 1978,
+      "▁dritte": 1979,
+      "▁Schule": 1980,
+      "▁erfüllt": 1981,
+      "▁läßt": 1982,
+      "▁verdamm": 1983,
+      "▁eigenen": 1984,
+      "rüßet": 1985,
+      "▁gewesen,": 1986,
+      "▁Heiden,": 1987,
+      "\",": 1988,
+      "bes": 1989,
+      "egen": 1990,
+      "ion": 1991,
+      "mehr": 1992,
+      "äll": 1993,
+      "▁ehr": 1994,
+      "▁sä": 1995,
+      "▁grü": 1996,
+      "▁er:": 1997,
+      "▁erst": 1998,
+      "▁Wolk": 1999
+    },
+    "merges": [
+      [
+        "e",
+        "n"
+      ],
+      [
+        "e",
+        "r"
+      ],
+      [
+        "▁",
+        "d"
+      ],
+      [
+        "c",
+        "h"
+      ],
+      [
+        "n",
+        "d"
+      ],
+      [
+        "e",
+        "i"
+      ],
+      [
+        "▁",
+        "s"
+      ],
+      [
+        "i",
+        "e"
+      ],
+      [
+        "▁",
+        "i"
+      ],
+      [
+        "▁",
+        "u"
+      ],
+      [
+        "▁",
+        "a"
+      ],
+      [
+        "▁",
+        "w"
+      ],
+      [
+        "▁u",
+        "nd"
+      ],
+      [
+        "e",
+        "s"
+      ],
+      [
+        "ei",
+        "n"
+      ],
+      [
+        "i",
+        "ch"
+      ],
+      [
+        "▁d",
+        "a"
+      ],
+      [
+        "s",
+        "t"
+      ],
+      [
+        "▁",
+        "g"
+      ],
+      [
+        ".",
+        "\n"
+      ],
+      [
+        "▁i",
+        "h"
+      ],
+      [
+        "▁",
+        "h"
+      ],
+      [
+        "e",
+        "t"
+      ],
+      [
+        "▁",
+        "n"
+      ],
+      [
+        "▁d",
+        "ie"
+      ],
+      [
+        "▁",
+        "v"
+      ],
+      [
+        "▁",
+        "G"
+      ],
+      [
+        "▁",
+        "z"
+      ],
+      [
+        "▁d",
+        "er"
+      ],
+      [
+        "▁",
+        "S"
+      ],
+      [
+        "e",
+        "l"
+      ],
+      [
+        "▁",
+        "m"
+      ],
+      [
+        "e",
+        "m"
+      ],
+      [
+        "b",
+        "er"
+      ],
+      [
+        "▁z",
+        "u"
+      ],
+      [
+        "en",
+        ","
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "▁",
+        "er"
+      ],
+      [
+        "ich",
+        "t"
+      ],
+      [
+        "▁a",
+        "u"
+      ],
+      [
+        "e",
+        "u"
+      ],
+      [
+        "▁d",
+        "en"
+      ],
+      [
+        "t",
+        "e"
+      ],
+      [
+        "n",
+        "g"
+      ],
+      [
+        "▁",
+        "W"
+      ],
+      [
+        "a",
+        "ch"
+      ],
+      [
+        "▁",
+        "H"
+      ],
+      [
+        "▁",
+        "D"
+      ],
+      [
+        "i",
+        "r"
+      ],
+      [
+        "▁h",
+        "a"
+      ],
+      [
+        "▁",
+        "ein"
+      ],
+      [
+        "a",
+        "r"
+      ],
+      [
+        "▁n",
+        "icht"
+      ],
+      [
+        "▁v",
+        "o"
+      ],
+      [
+        "▁",
+        "b"
+      ],
+      [
+        "▁s",
+        "ie"
+      ],
+      [
+        "i",
+        "g"
+      ],
+      [
+        "h",
+        "r"
+      ],
+      [
+        "▁",
+        "U"
+      ],
+      [
+        "u",
+        "s"
+      ],
+      [
+        "t",
+        "en"
+      ],
+      [
+        "▁da",
+        "ß"
+      ],
+      [
+        "▁",
+        "J"
+      ],
+      [
+        "▁s",
+        "o"
+      ],
+      [
+        "▁da",
+        "s"
+      ],
+      [
+        "▁a",
+        "ber"
+      ],
+      [
+        "b",
+        "en"
+      ],
+      [
+        "▁i",
+        "st"
+      ],
+      [
+        "▁g",
+        "e"
+      ],
+      [
+        "▁ih",
+        "r"
+      ],
+      [
+        "▁i",
+        "n"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "▁U",
+        "nd"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "▁",
+        "E"
+      ],
+      [
+        "▁",
+        "M"
+      ],
+      [
+        "▁",
+        "eu"
+      ],
+      [
+        "▁ih",
+        "n"
+      ],
+      [
+        "▁i",
+        "ch"
+      ],
+      [
+        "▁w",
+        "ir"
+      ],
+      [
+        "i",
+        "t"
+      ],
+      [
+        "▁",
+        "k"
+      ],
+      [
+        "a",
+        "g"
+      ],
+      [
+        "t",
+        ","
+      ],
+      [
+        "a",
+        "s"
+      ],
+      [
+        "o",
+        "r"
+      ],
+      [
+        "a",
+        "u"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "a",
+        "n"
+      ],
+      [
+        "▁au",
+        "f"
+      ],
+      [
+        "▁u",
+        "n"
+      ],
+      [
+        "▁",
+        "f"
+      ],
+      [
+        "▁vo",
+        "n"
+      ],
+      [
+        "d",
+        "en"
+      ],
+      [
+        "er",
+        "n"
+      ],
+      [
+        "▁",
+        "T"
+      ],
+      [
+        "▁s",
+        "ein"
+      ],
+      [
+        "▁s",
+        "pr"
+      ],
+      [
+        "▁",
+        "A"
+      ],
+      [
+        "▁d",
+        "em"
+      ],
+      [
+        "a",
+        "nd"
+      ],
+      [
+        "▁",
+        "l"
+      ],
+      [
+        "▁",
+        "B"
+      ],
+      [
+        "i",
+        "n"
+      ],
+      [
+        "s",
+        "ch"
+      ],
+      [
+        "o",
+        "tt"
+      ],
+      [
+        "▁",
+        "L"
+      ],
+      [
+        "▁eu",
+        "ch"
+      ],
+      [
+        "▁G",
+        "ott"
+      ],
+      [
+        "▁d",
+        "u"
+      ],
+      [
+        "t",
+        "er"
+      ],
+      [
+        "e",
+        "h"
+      ],
+      [
+        "▁w",
+        "ar"
+      ],
+      [
+        "e",
+        ","
+      ],
+      [
+        "▁spr",
+        "ach"
+      ],
+      [
+        "d",
+        "er"
+      ],
+      [
+        "▁a",
+        "ll"
+      ],
+      [
+        "▁m",
+        "it"
+      ],
+      [
+        "▁v",
+        "er"
+      ],
+      [
+        "▁w",
+        "er"
+      ],
+      [
+        "▁a",
+        "n"
+      ],
+      [
+        "▁",
+        "K"
+      ],
+      [
+        "o",
+        "h"
+      ],
+      [
+        "▁",
+        "V"
+      ],
+      [
+        "▁d",
+        "es"
+      ],
+      [
+        "▁",
+        "t"
+      ],
+      [
+        "▁",
+        "F"
+      ],
+      [
+        "en",
+        "n"
+      ],
+      [
+        "▁ih",
+        "m"
+      ],
+      [
+        "i",
+        "nd"
+      ],
+      [
+        "l",
+        "ich"
+      ],
+      [
+        "a",
+        "l"
+      ],
+      [
+        "▁",
+        "es"
+      ],
+      [
+        "a",
+        "m"
+      ],
+      [
+        "b",
+        "e"
+      ],
+      [
+        "▁ha",
+        "t"
+      ],
+      [
+        "en",
+        ".\n"
+      ],
+      [
+        "▁g",
+        "es"
+      ],
+      [
+        "▁",
+        "P"
+      ],
+      [
+        "i",
+        "s"
+      ],
+      [
+        "▁J",
+        "es"
+      ],
+      [
+        "ei",
+        "t"
+      ],
+      [
+        "r",
+        "e"
+      ],
+      [
+        "▁s",
+        "ich"
+      ],
+      [
+        "▁den",
+        "n"
+      ],
+      [
+        "ch",
+        "t"
+      ],
+      [
+        "▁un",
+        "s"
+      ],
+      [
+        "g",
+        "e"
+      ],
+      [
+        "▁au",
+        "ch"
+      ],
+      [
+        "▁",
+        "I"
+      ],
+      [
+        "a",
+        "h"
+      ],
+      [
+        "▁",
+        "Z"
+      ],
+      [
+        "l",
+        "ei"
+      ],
+      [
+        "i",
+        "ng"
+      ],
+      [
+        "▁wir",
+        "d"
+      ],
+      [
+        "o",
+        "mm"
+      ],
+      [
+        "d",
+        "e"
+      ],
+      [
+        "▁w",
+        "ie"
+      ],
+      [
+        "▁S",
+        "ch"
+      ],
+      [
+        "l",
+        "s"
+      ],
+      [
+        "u",
+        "n"
+      ],
+      [
+        "i",
+        "st"
+      ],
+      [
+        "ü",
+        "r"
+      ],
+      [
+        "▁S",
+        "t"
+      ],
+      [
+        "▁D",
+        "a"
+      ],
+      [
+        "u",
+        "m"
+      ],
+      [
+        "o",
+        "l"
+      ],
+      [
+        "g",
+        "en"
+      ],
+      [
+        "▁ihn",
+        "en"
+      ],
+      [
+        "an",
+        "n"
+      ],
+      [
+        "nd",
+        "ern"
+      ],
+      [
+        "r",
+        "o"
+      ],
+      [
+        "▁s",
+        "ei"
+      ],
+      [
+        "▁au",
+        "s"
+      ],
+      [
+        "el",
+        "ch"
+      ],
+      [
+        "▁s",
+        "ind"
+      ],
+      [
+        "▁m",
+        "ein"
+      ],
+      [
+        "E",
+        "R"
+      ],
+      [
+        "ER",
+        "R"
+      ],
+      [
+        "▁",
+        "N"
+      ],
+      [
+        "▁H",
+        "ERR"
+      ],
+      [
+        "ei",
+        "l"
+      ],
+      [
+        "▁s",
+        "ch"
+      ],
+      [
+        "▁E",
+        "r"
+      ],
+      [
+        "▁Jes",
+        "us"
+      ],
+      [
+        "i",
+        "ll"
+      ],
+      [
+        "▁s",
+        "ag"
+      ],
+      [
+        "r",
+        "ch"
+      ],
+      [
+        "u",
+        "ng"
+      ],
+      [
+        "e",
+        "hr"
+      ],
+      [
+        "▁a",
+        "ls"
+      ],
+      [
+        "oh",
+        "n"
+      ],
+      [
+        "▁",
+        "R"
+      ],
+      [
+        "▁D",
+        "enn"
+      ],
+      [
+        "a",
+        "ng"
+      ],
+      [
+        "s",
+        "en"
+      ],
+      [
+        "r",
+        "ie"
+      ],
+      [
+        "r",
+        "ü"
+      ],
+      [
+        "▁",
+        "C"
+      ],
+      [
+        "ie",
+        "l"
+      ],
+      [
+        "u",
+        "nd"
+      ],
+      [
+        "f",
+        "t"
+      ],
+      [
+        "▁du",
+        "rch"
+      ],
+      [
+        "▁h",
+        "in"
+      ],
+      [
+        "e",
+        "g"
+      ],
+      [
+        "▁w",
+        "elch"
+      ],
+      [
+        "ö",
+        "r"
+      ],
+      [
+        "▁",
+        "j"
+      ],
+      [
+        "o",
+        "ch"
+      ],
+      [
+        "▁vo",
+        "r"
+      ],
+      [
+        "▁w",
+        "as"
+      ],
+      [
+        "▁C",
+        "hr"
+      ],
+      [
+        "▁Chr",
+        "ist"
+      ],
+      [
+        "▁wer",
+        "den"
+      ],
+      [
+        "t",
+        "et"
+      ],
+      [
+        "▁so",
+        "ll"
+      ],
+      [
+        "▁",
+        "ü"
+      ],
+      [
+        "▁Gott",
+        "es"
+      ],
+      [
+        "ei",
+        "st"
+      ],
+      [
+        "o",
+        "n"
+      ],
+      [
+        "a",
+        "hr"
+      ],
+      [
+        "i",
+        "mm"
+      ],
+      [
+        "▁",
+        "o"
+      ],
+      [
+        "▁n",
+        "ach"
+      ],
+      [
+        "▁un",
+        "ter"
+      ],
+      [
+        "en",
+        "sch"
+      ],
+      [
+        "▁ü",
+        "ber"
+      ],
+      [
+        "r",
+        "ei"
+      ],
+      [
+        "w",
+        "or"
+      ],
+      [
+        "a",
+        "t"
+      ],
+      [
+        "d",
+        "et"
+      ],
+      [
+        "?",
+        "\n"
+      ],
+      [
+        "l",
+        "au"
+      ],
+      [
+        "et",
+        "z"
+      ],
+      [
+        "▁M",
+        "ensch"
+      ],
+      [
+        "▁m",
+        "ir"
+      ],
+      [
+        "b",
+        "t"
+      ],
+      [
+        "er",
+        "e"
+      ],
+      [
+        "er",
+        ","
+      ],
+      [
+        "▁G",
+        "e"
+      ],
+      [
+        "f",
+        "en"
+      ],
+      [
+        "'",
+        "s"
+      ],
+      [
+        "▁u",
+        "m"
+      ],
+      [
+        "s",
+        "e"
+      ],
+      [
+        "▁so",
+        "ndern"
+      ],
+      [
+        "▁w",
+        "ill"
+      ],
+      [
+        "ig",
+        "en"
+      ],
+      [
+        "te",
+        ","
+      ],
+      [
+        "▁all",
+        "e"
+      ],
+      [
+        "▁m",
+        "ich"
+      ],
+      [
+        "a",
+        "us"
+      ],
+      [
+        "▁ge",
+        "h"
+      ],
+      [
+        "c",
+        "k"
+      ],
+      [
+        "▁l",
+        "ie"
+      ],
+      [
+        "▁",
+        "re"
+      ],
+      [
+        "u",
+        "r"
+      ],
+      [
+        "▁H",
+        "er"
+      ],
+      [
+        "▁I",
+        "ch"
+      ],
+      [
+        "▁i",
+        "m"
+      ],
+      [
+        "ü",
+        "nd"
+      ],
+      [
+        "▁ha",
+        "ben"
+      ],
+      [
+        "▁k",
+        "omm"
+      ],
+      [
+        "▁d",
+        "ein"
+      ],
+      [
+        "b",
+        "en,"
+      ],
+      [
+        "▁b",
+        "ei"
+      ],
+      [
+        "▁s",
+        "t"
+      ],
+      [
+        "▁sprach",
+        ":"
+      ],
+      [
+        "▁S",
+        "ohn"
+      ],
+      [
+        "▁W",
+        "er"
+      ],
+      [
+        ";",
+        "\n"
+      ],
+      [
+        "▁ges",
+        "ch"
+      ],
+      [
+        "▁HERR",
+        "N"
+      ],
+      [
+        "▁v",
+        "iel"
+      ],
+      [
+        "▁ein",
+        "e"
+      ],
+      [
+        "▁ein",
+        "en"
+      ],
+      [
+        "!",
+        "\n"
+      ],
+      [
+        "a",
+        "ter"
+      ],
+      [
+        "▁b",
+        "e"
+      ],
+      [
+        "▁k",
+        "am"
+      ],
+      [
+        "▁G",
+        "eist"
+      ],
+      [
+        "eh",
+        "en"
+      ],
+      [
+        "▁G",
+        "es"
+      ],
+      [
+        "▁V",
+        "ater"
+      ],
+      [
+        "r",
+        "eu"
+      ],
+      [
+        "▁n",
+        "un"
+      ],
+      [
+        "▁W",
+        "ei"
+      ],
+      [
+        "a",
+        "b"
+      ],
+      [
+        "u",
+        "t"
+      ],
+      [
+        "▁s",
+        "el"
+      ],
+      [
+        "▁T",
+        "ag"
+      ],
+      [
+        "i",
+        "l"
+      ],
+      [
+        "▁sein",
+        "e"
+      ],
+      [
+        "en",
+        ":"
+      ],
+      [
+        "ol",
+        "k"
+      ],
+      [
+        "▁E",
+        "s"
+      ],
+      [
+        "▁",
+        "O"
+      ],
+      [
+        "▁g",
+        "ing"
+      ],
+      [
+        "▁ist",
+        ","
+      ],
+      [
+        "▁da",
+        "r"
+      ],
+      [
+        "i",
+        "en"
+      ],
+      [
+        "n",
+        "e"
+      ],
+      [
+        "▁die",
+        "s"
+      ],
+      [
+        "▁ha",
+        "be"
+      ],
+      [
+        "k",
+        "eit"
+      ],
+      [
+        "▁w",
+        "o"
+      ],
+      [
+        "t",
+        ".\n"
+      ],
+      [
+        "r",
+        "a"
+      ],
+      [
+        "▁V",
+        "olk"
+      ],
+      [
+        "r",
+        "u"
+      ],
+      [
+        "t",
+        "wor"
+      ],
+      [
+        "p",
+        "f"
+      ],
+      [
+        "ei",
+        "ß"
+      ],
+      [
+        "▁h",
+        "ör"
+      ],
+      [
+        "▁W",
+        "or"
+      ],
+      [
+        "ü",
+        "ng"
+      ],
+      [
+        "e",
+        "ben"
+      ],
+      [
+        "▁f",
+        "ür"
+      ],
+      [
+        "▁S",
+        "ie"
+      ],
+      [
+        "▁D",
+        "ie"
+      ],
+      [
+        "▁d",
+        "ir"
+      ],
+      [
+        "▁J",
+        "üng"
+      ],
+      [
+        "b",
+        "st"
+      ],
+      [
+        "e",
+        ".\n"
+      ],
+      [
+        "▁d",
+        "ich"
+      ],
+      [
+        "▁ihm",
+        ":"
+      ],
+      [
+        "▁S",
+        "o"
+      ],
+      [
+        "es",
+        "t"
+      ],
+      [
+        "d",
+        "ig"
+      ],
+      [
+        ",",
+        "\n"
+      ],
+      [
+        "el",
+        "t"
+      ],
+      [
+        "lei",
+        "ch"
+      ],
+      [
+        "▁Mensch",
+        "en"
+      ],
+      [
+        "▁H",
+        "imm"
+      ],
+      [
+        "k",
+        "omm"
+      ],
+      [
+        "▁Himm",
+        "el"
+      ],
+      [
+        "p",
+        "h"
+      ],
+      [
+        "▁J",
+        "u"
+      ],
+      [
+        "▁",
+        "\""
+      ],
+      [
+        "▁war",
+        "d"
+      ],
+      [
+        "▁s",
+        "ah"
+      ],
+      [
+        "▁b",
+        "in"
+      ],
+      [
+        "n",
+        "is"
+      ],
+      [
+        "▁g",
+        "en"
+      ],
+      [
+        "▁n",
+        "och"
+      ],
+      [
+        "▁ihnen",
+        ":"
+      ],
+      [
+        "d",
+        "en,"
+      ],
+      [
+        "▁sei",
+        "d"
+      ],
+      [
+        "▁V",
+        "er"
+      ],
+      [
+        "twor",
+        "tet"
+      ],
+      [
+        "i",
+        "sch"
+      ],
+      [
+        "ei",
+        "ch"
+      ],
+      [
+        "▁o",
+        "der"
+      ],
+      [
+        "i",
+        "er"
+      ],
+      [
+        "l",
+        "t"
+      ],
+      [
+        "et",
+        ","
+      ],
+      [
+        "r",
+        "i"
+      ],
+      [
+        "▁nicht",
+        ","
+      ],
+      [
+        "ach",
+        "t"
+      ],
+      [
+        "▁",
+        "et"
+      ],
+      [
+        "▁zu",
+        "m"
+      ],
+      [
+        "u",
+        "ch"
+      ],
+      [
+        "▁z",
+        "w"
+      ],
+      [
+        "▁h",
+        "er"
+      ],
+      [
+        "a",
+        "mm"
+      ],
+      [
+        "ö",
+        "n"
+      ],
+      [
+        "▁G",
+        "lau"
+      ],
+      [
+        "▁W",
+        "as"
+      ],
+      [
+        "▁k",
+        "ein"
+      ],
+      [
+        "▁all",
+        "es"
+      ],
+      [
+        "f",
+        "f"
+      ],
+      [
+        "▁als",
+        "o"
+      ],
+      [
+        "ß",
+        "en"
+      ],
+      [
+        "▁g",
+        "et"
+      ],
+      [
+        "am",
+        "en"
+      ],
+      [
+        "ig",
+        "keit"
+      ],
+      [
+        "eu",
+        "g"
+      ],
+      [
+        "▁t",
+        "r"
+      ],
+      [
+        "▁T",
+        "o"
+      ],
+      [
+        "▁ge",
+        "w"
+      ],
+      [
+        "lich",
+        "e"
+      ],
+      [
+        "ä",
+        "r"
+      ],
+      [
+        "▁sein",
+        "en"
+      ],
+      [
+        "▁K",
+        "ind"
+      ],
+      [
+        "t",
+        "en,"
+      ],
+      [
+        "▁so",
+        "l"
+      ],
+      [
+        "h",
+        "eit"
+      ],
+      [
+        "▁a",
+        "nd"
+      ],
+      [
+        "▁g",
+        "ro"
+      ],
+      [
+        "▁S",
+        "ünd"
+      ],
+      [
+        "▁B",
+        "rü"
+      ],
+      [
+        "▁an",
+        "twortet"
+      ],
+      [
+        "▁Jes",
+        "u"
+      ],
+      [
+        "▁sel",
+        "bst"
+      ],
+      [
+        "en",
+        ";"
+      ],
+      [
+        "te",
+        "h"
+      ],
+      [
+        "▁ge",
+        "b"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "er",
+        "t"
+      ],
+      [
+        "u",
+        "ß"
+      ],
+      [
+        "au",
+        "f"
+      ],
+      [
+        "▁sag",
+        "e"
+      ],
+      [
+        "o",
+        "s"
+      ],
+      [
+        "et",
+        "en"
+      ],
+      [
+        "▁sol",
+        "ch"
+      ],
+      [
+        "▁wo",
+        "ll"
+      ],
+      [
+        "h",
+        "e,"
+      ],
+      [
+        "au",
+        "l"
+      ],
+      [
+        "u",
+        "l"
+      ],
+      [
+        "st",
+        "en"
+      ],
+      [
+        "▁vo",
+        "m"
+      ],
+      [
+        "▁uns",
+        "er"
+      ],
+      [
+        "▁w",
+        "enn"
+      ],
+      [
+        "▁ein",
+        "em"
+      ],
+      [
+        "▁A",
+        "ber"
+      ],
+      [
+        "b",
+        "ar"
+      ],
+      [
+        "z",
+        "en"
+      ],
+      [
+        "▁n",
+        "ie"
+      ],
+      [
+        "▁Ges",
+        "etz"
+      ],
+      [
+        "▁A",
+        "u"
+      ],
+      [
+        "▁n",
+        "ah"
+      ],
+      [
+        "▁D",
+        "ar"
+      ],
+      [
+        "f",
+        "fen"
+      ],
+      [
+        "ä",
+        "t"
+      ],
+      [
+        "ge",
+        "ben"
+      ],
+      [
+        "s",
+        ","
+      ],
+      [
+        "▁sprach",
+        "en:"
+      ],
+      [
+        "oh",
+        "l"
+      ],
+      [
+        "▁Christ",
+        "us"
+      ],
+      [
+        "st",
+        "er"
+      ],
+      [
+        "▁antwortet",
+        "e"
+      ],
+      [
+        "b",
+        "r"
+      ],
+      [
+        "▁ihr",
+        "e"
+      ],
+      [
+        "ü",
+        "hr"
+      ],
+      [
+        "i",
+        "der"
+      ],
+      [
+        "▁a",
+        "m"
+      ],
+      [
+        "▁g",
+        "lau"
+      ],
+      [
+        "▁b",
+        "es"
+      ],
+      [
+        "ig",
+        "e"
+      ],
+      [
+        "▁I",
+        "hr"
+      ],
+      [
+        "▁",
+        "r"
+      ],
+      [
+        "ei",
+        "t,"
+      ],
+      [
+        "▁gro",
+        "ß"
+      ],
+      [
+        "▁H",
+        "aus"
+      ],
+      [
+        "▁Brü",
+        "der"
+      ],
+      [
+        "▁D",
+        "er"
+      ],
+      [
+        "▁L",
+        "ie"
+      ],
+      [
+        "▁Jüng",
+        "er"
+      ],
+      [
+        "ch",
+        "te"
+      ],
+      [
+        "▁ver",
+        "k"
+      ],
+      [
+        "s",
+        "el"
+      ],
+      [
+        "ng",
+        "el"
+      ],
+      [
+        "▁L",
+        "ei"
+      ],
+      [
+        "nd",
+        "e"
+      ],
+      [
+        "▁ha",
+        "bt"
+      ],
+      [
+        "▁b",
+        "is"
+      ],
+      [
+        "▁s",
+        "teh"
+      ],
+      [
+        "ang",
+        "en"
+      ],
+      [
+        "▁Christ",
+        "i"
+      ],
+      [
+        "s",
+        "er"
+      ],
+      [
+        "▁E",
+        "ngel"
+      ],
+      [
+        "▁hat",
+        "te"
+      ],
+      [
+        "a",
+        "ß"
+      ],
+      [
+        "▁a",
+        "ndern"
+      ],
+      [
+        "l",
+        "ie"
+      ],
+      [
+        "▁W",
+        "ahr"
+      ],
+      [
+        "aul",
+        "us"
+      ],
+      [
+        "ä",
+        "u"
+      ],
+      [
+        "▁g",
+        "el"
+      ],
+      [
+        "▁h",
+        "eil"
+      ],
+      [
+        "▁W",
+        "elt"
+      ],
+      [
+        "▁ein",
+        "er"
+      ],
+      [
+        "▁aber",
+        ","
+      ],
+      [
+        "▁f",
+        "r"
+      ],
+      [
+        "▁w",
+        "is"
+      ],
+      [
+        "▁j",
+        "em"
+      ],
+      [
+        "▁Wor",
+        "t"
+      ],
+      [
+        "\"",
+        "\n"
+      ],
+      [
+        "n",
+        "en"
+      ],
+      [
+        "r",
+        "us"
+      ],
+      [
+        "s",
+        "et"
+      ],
+      [
+        "▁t",
+        "un"
+      ],
+      [
+        "▁Wer",
+        "k"
+      ],
+      [
+        "▁zu",
+        "r"
+      ],
+      [
+        "g",
+        "el"
+      ],
+      [
+        "m",
+        "al"
+      ],
+      [
+        "▁m",
+        "ach"
+      ],
+      [
+        "▁L",
+        "eben"
+      ],
+      [
+        "▁Glau",
+        "ben"
+      ],
+      [
+        "ag",
+        "t"
+      ],
+      [
+        "eh",
+        "m"
+      ],
+      [
+        "▁jem",
+        "and"
+      ],
+      [
+        "▁g",
+        "leich"
+      ],
+      [
+        "▁m",
+        "ehr"
+      ],
+      [
+        "▁sein",
+        "er"
+      ],
+      [
+        "▁ha",
+        "t,"
+      ],
+      [
+        "▁eu",
+        "r"
+      ],
+      [
+        "▁all",
+        "en"
+      ],
+      [
+        "▁wer",
+        "det"
+      ],
+      [
+        "ere",
+        "cht"
+      ],
+      [
+        "er",
+        "st"
+      ],
+      [
+        "▁w",
+        "ür"
+      ],
+      [
+        "▁H",
+        "eil"
+      ],
+      [
+        "▁N",
+        "amen"
+      ],
+      [
+        "z",
+        "e"
+      ],
+      [
+        "▁D",
+        "as"
+      ],
+      [
+        "▁sein",
+        "em"
+      ],
+      [
+        "ro",
+        "ph"
+      ],
+      [
+        "▁Her",
+        "r"
+      ],
+      [
+        "komm",
+        "en"
+      ],
+      [
+        "l",
+        "e"
+      ],
+      [
+        "▁A",
+        "n"
+      ],
+      [
+        "▁P",
+        "aulus"
+      ],
+      [
+        "m",
+        "and"
+      ],
+      [
+        "▁w",
+        "ider"
+      ],
+      [
+        "ten",
+        ".\n"
+      ],
+      [
+        "▁l",
+        "as"
+      ],
+      [
+        "▁b",
+        "r"
+      ],
+      [
+        "et",
+        "rus"
+      ],
+      [
+        "▁P",
+        "roph"
+      ],
+      [
+        "▁P",
+        "etrus"
+      ],
+      [
+        "▁zw",
+        "ei"
+      ],
+      [
+        "▁P",
+        "h"
+      ],
+      [
+        "▁Ju",
+        "den"
+      ],
+      [
+        "▁wie",
+        "der"
+      ],
+      [
+        "▁ge",
+        "wor"
+      ],
+      [
+        "▁ha",
+        "st"
+      ],
+      [
+        "▁nicht",
+        "s"
+      ],
+      [
+        "▁vo",
+        "ll"
+      ],
+      [
+        "▁F",
+        "lei"
+      ],
+      [
+        "▁m",
+        "an"
+      ],
+      [
+        "▁B",
+        "l"
+      ],
+      [
+        "▁Z",
+        "eit"
+      ],
+      [
+        "▁mein",
+        "e"
+      ],
+      [
+        "▁re",
+        "det"
+      ],
+      [
+        "▁Dar",
+        "um"
+      ],
+      [
+        ".",
+        "\"\n"
+      ],
+      [
+        "ä",
+        "h"
+      ],
+      [
+        "o",
+        "b"
+      ],
+      [
+        "o",
+        "t"
+      ],
+      [
+        "ei",
+        "den"
+      ],
+      [
+        "es",
+        ","
+      ],
+      [
+        "▁J",
+        "er"
+      ],
+      [
+        "▁ver",
+        "s"
+      ],
+      [
+        "▁K",
+        "ne"
+      ],
+      [
+        "en",
+        "t"
+      ],
+      [
+        "ig",
+        "t"
+      ],
+      [
+        "▁all",
+        "er"
+      ],
+      [
+        "▁G",
+        "em"
+      ],
+      [
+        "▁Ge",
+        "b"
+      ],
+      [
+        "▁Wei",
+        "b"
+      ],
+      [
+        "▁g",
+        "an"
+      ],
+      [
+        "▁spr",
+        "icht"
+      ],
+      [
+        "rie",
+        "ben"
+      ],
+      [
+        "pr",
+        "ie"
+      ],
+      [
+        "▁wer",
+        "de"
+      ],
+      [
+        "▁",
+        "ber"
+      ],
+      [
+        "▁U",
+        "n"
+      ],
+      [
+        "▁war",
+        "en"
+      ],
+      [
+        "▁ge",
+        "geben"
+      ],
+      [
+        "▁Gott",
+        ","
+      ],
+      [
+        "al",
+        "em"
+      ],
+      [
+        "▁St",
+        "ad"
+      ],
+      [
+        "▁welch",
+        "er"
+      ],
+      [
+        "▁welch",
+        "e"
+      ],
+      [
+        "us",
+        "alem"
+      ],
+      [
+        "▁ge",
+        "f"
+      ],
+      [
+        "▁dies",
+        "er"
+      ],
+      [
+        "▁nah",
+        "m"
+      ],
+      [
+        "▁Jer",
+        "usalem"
+      ],
+      [
+        "▁war",
+        ","
+      ],
+      [
+        "lich",
+        "en"
+      ],
+      [
+        "s",
+        "en,"
+      ],
+      [
+        "▁d",
+        "och"
+      ],
+      [
+        "▁R",
+        "eich"
+      ],
+      [
+        "▁nie",
+        "mand"
+      ],
+      [
+        "▁ges",
+        "agt"
+      ],
+      [
+        "▁M",
+        "ann"
+      ],
+      [
+        "▁sprach",
+        "en"
+      ],
+      [
+        "▁et",
+        "liche"
+      ],
+      [
+        "ü",
+        "n"
+      ],
+      [
+        "▁H",
+        "and"
+      ],
+      [
+        "tt",
+        "er"
+      ],
+      [
+        "▁L",
+        "and"
+      ],
+      [
+        "▁K",
+        "ön"
+      ],
+      [
+        "a",
+        "ll"
+      ],
+      [
+        "d",
+        "e,"
+      ],
+      [
+        "▁w",
+        "eiß"
+      ],
+      [
+        "▁F",
+        "reu"
+      ],
+      [
+        "▁",
+        "Ä"
+      ],
+      [
+        "▁",
+        "em"
+      ],
+      [
+        "▁",
+        "ent"
+      ],
+      [
+        "▁G",
+        "n"
+      ],
+      [
+        "▁Sch",
+        "ri"
+      ],
+      [
+        "h",
+        "e"
+      ],
+      [
+        "l",
+        "ein"
+      ],
+      [
+        "r",
+        "ä"
+      ],
+      [
+        "▁s",
+        "eh"
+      ],
+      [
+        "el",
+        "n"
+      ],
+      [
+        "▁J",
+        "oh"
+      ],
+      [
+        "▁Flei",
+        "sch"
+      ],
+      [
+        "k",
+        "enn"
+      ],
+      [
+        "w",
+        "ie"
+      ],
+      [
+        "▁b",
+        "et"
+      ],
+      [
+        "▁k",
+        "ann"
+      ],
+      [
+        "an",
+        "k"
+      ],
+      [
+        "▁Joh",
+        "ann"
+      ],
+      [
+        "el",
+        "i"
+      ],
+      [
+        "▁welch",
+        "en"
+      ],
+      [
+        "es",
+        "en"
+      ],
+      [
+        "al",
+        "d"
+      ],
+      [
+        "ol",
+        "g"
+      ],
+      [
+        "▁komm",
+        "en"
+      ],
+      [
+        "▁gesch",
+        "rieben"
+      ],
+      [
+        "st",
+        "e"
+      ],
+      [
+        "▁w",
+        "ohl"
+      ],
+      [
+        "▁H",
+        "oh"
+      ],
+      [
+        "▁eu",
+        "re"
+      ],
+      [
+        "p",
+        "el"
+      ],
+      [
+        "ch",
+        "ten"
+      ],
+      [
+        "▁a",
+        "b"
+      ],
+      [
+        "▁die",
+        "se"
+      ],
+      [
+        "▁B",
+        "ru"
+      ],
+      [
+        "▁sind",
+        ","
+      ],
+      [
+        "▁w",
+        "ur"
+      ],
+      [
+        "ein",
+        "and"
+      ],
+      [
+        "▁euch",
+        ","
+      ],
+      [
+        "▁ver",
+        "l"
+      ],
+      [
+        "▁kam",
+        "en"
+      ],
+      [
+        "▁em",
+        "pf"
+      ],
+      [
+        "b",
+        "e,"
+      ],
+      [
+        "i",
+        "m"
+      ],
+      [
+        "z",
+        "u"
+      ],
+      [
+        "au",
+        "p"
+      ],
+      [
+        "n",
+        "er"
+      ],
+      [
+        "▁er",
+        "f"
+      ],
+      [
+        "▁t",
+        "u"
+      ],
+      [
+        "and",
+        "en"
+      ],
+      [
+        "▁viel",
+        "e"
+      ],
+      [
+        "▁and",
+        "er"
+      ],
+      [
+        "▁solch",
+        "es"
+      ],
+      [
+        "▁b",
+        "ist"
+      ],
+      [
+        "▁eu",
+        "er"
+      ],
+      [
+        "▁Schri",
+        "ft"
+      ],
+      [
+        "▁Bru",
+        "der"
+      ],
+      [
+        "▁",
+        "pr"
+      ],
+      [
+        "▁w",
+        "and"
+      ],
+      [
+        "▁T",
+        "em"
+      ],
+      [
+        "▁HERR",
+        ","
+      ],
+      [
+        "▁Lie",
+        "be"
+      ],
+      [
+        "v",
+        "or"
+      ],
+      [
+        "▁b",
+        "lei"
+      ],
+      [
+        "▁Tag",
+        "e"
+      ],
+      [
+        "h",
+        "a"
+      ],
+      [
+        "▁",
+        "("
+      ],
+      [
+        "▁Tem",
+        "pel"
+      ],
+      [
+        "▁H",
+        "ä"
+      ],
+      [
+        "n",
+        "et"
+      ],
+      [
+        "en,",
+        "\n"
+      ],
+      [
+        "ern",
+        ","
+      ],
+      [
+        "▁all",
+        "ein"
+      ],
+      [
+        "▁Sch",
+        "w"
+      ],
+      [
+        "▁Ge",
+        "w"
+      ],
+      [
+        "▁Gem",
+        "ei"
+      ],
+      [
+        "f",
+        "ä"
+      ],
+      [
+        "f",
+        "el"
+      ],
+      [
+        "h",
+        "er"
+      ],
+      [
+        "ü",
+        "ll"
+      ],
+      [
+        "▁E",
+        "v"
+      ],
+      [
+        "▁A",
+        "ls"
+      ],
+      [
+        "▁Brüder",
+        ","
+      ],
+      [
+        "▁sie",
+        "he,"
+      ],
+      [
+        "▁R",
+        "e"
+      ],
+      [
+        "▁Christ",
+        "o"
+      ],
+      [
+        "ffen",
+        "bar"
+      ],
+      [
+        "a",
+        "de"
+      ],
+      [
+        "ü",
+        "t"
+      ],
+      [
+        "▁W",
+        "ir"
+      ],
+      [
+        "▁ihr",
+        "en"
+      ],
+      [
+        "etz",
+        "t"
+      ],
+      [
+        "▁get",
+        "an"
+      ],
+      [
+        "▁St",
+        "imm"
+      ],
+      [
+        "einand",
+        "er"
+      ],
+      [
+        "▁Ev",
+        "ang"
+      ],
+      [
+        "a",
+        ","
+      ],
+      [
+        "z",
+        "ig"
+      ],
+      [
+        "▁G",
+        "eh"
+      ],
+      [
+        "▁ha",
+        "l"
+      ],
+      [
+        "ä",
+        "n"
+      ],
+      [
+        "▁B",
+        "ro"
+      ],
+      [
+        "▁j",
+        "eg"
+      ],
+      [
+        "rei",
+        "ch"
+      ],
+      [
+        "eli",
+        "um"
+      ],
+      [
+        "▁wur",
+        "den"
+      ],
+      [
+        "▁Evang",
+        "elium"
+      ],
+      [
+        "ie",
+        "h"
+      ],
+      [
+        "it",
+        "ten"
+      ],
+      [
+        "▁Stad",
+        "t"
+      ],
+      [
+        "e",
+        "w"
+      ],
+      [
+        "f",
+        "e"
+      ],
+      [
+        "r",
+        "au"
+      ],
+      [
+        "▁g",
+        "em"
+      ],
+      [
+        "ß",
+        "t"
+      ],
+      [
+        "▁mein",
+        "em"
+      ],
+      [
+        "▁verk",
+        "ünd"
+      ],
+      [
+        "ä",
+        "m"
+      ],
+      [
+        "▁g",
+        "u"
+      ],
+      [
+        "te",
+        ".\n"
+      ],
+      [
+        "▁ist",
+        ".\n"
+      ],
+      [
+        "▁euch",
+        ":"
+      ],
+      [
+        "▁dein",
+        "e"
+      ],
+      [
+        "▁dar",
+        "um"
+      ],
+      [
+        "▁and",
+        "ere"
+      ],
+      [
+        "▁Ph",
+        "ar"
+      ],
+      [
+        "i",
+        "ff"
+      ],
+      [
+        "o",
+        "se"
+      ],
+      [
+        "▁s",
+        "ehen"
+      ],
+      [
+        "▁D",
+        "u"
+      ],
+      [
+        "▁Kön",
+        "ig"
+      ],
+      [
+        "▁Gn",
+        "ade"
+      ],
+      [
+        "aup",
+        "t"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "ag",
+        "en"
+      ],
+      [
+        "▁Ges",
+        "ch"
+      ],
+      [
+        "b",
+        "t,"
+      ],
+      [
+        "ö",
+        "l"
+      ],
+      [
+        "▁w",
+        "ahr"
+      ],
+      [
+        "▁l",
+        "eben"
+      ],
+      [
+        "▁St",
+        "und"
+      ],
+      [
+        "▁Kind",
+        "er"
+      ],
+      [
+        "▁gewor",
+        "den"
+      ],
+      [
+        "k",
+        "en"
+      ],
+      [
+        "er",
+        "icht"
+      ],
+      [
+        "▁I",
+        "s"
+      ],
+      [
+        "▁Er",
+        "de"
+      ],
+      [
+        "▁r",
+        "icht"
+      ],
+      [
+        "▁Lei",
+        "b"
+      ],
+      [
+        "▁Johann",
+        "es"
+      ],
+      [
+        "m",
+        "ah"
+      ],
+      [
+        "o",
+        "st"
+      ],
+      [
+        "st",
+        "ern"
+      ],
+      [
+        "▁T",
+        "eu"
+      ],
+      [
+        "is",
+        "ä"
+      ],
+      [
+        "▁hin",
+        "aus"
+      ],
+      [
+        "▁Phar",
+        "isä"
+      ],
+      [
+        "▁a",
+        "ng"
+      ],
+      [
+        "▁den",
+        "en,"
+      ],
+      [
+        "▁M",
+        "e"
+      ],
+      [
+        "i",
+        "tt"
+      ],
+      [
+        "ü",
+        "ß"
+      ],
+      [
+        "en",
+        "d"
+      ],
+      [
+        "▁k",
+        "ön"
+      ],
+      [
+        "▁A",
+        "r"
+      ],
+      [
+        "lich",
+        ","
+      ],
+      [
+        "lich",
+        "er"
+      ],
+      [
+        "▁ges",
+        "and"
+      ],
+      [
+        "b",
+        "et"
+      ],
+      [
+        "h",
+        "l"
+      ],
+      [
+        "▁da",
+        "n"
+      ],
+      [
+        "▁sie",
+        "ben"
+      ],
+      [
+        "as",
+        ","
+      ],
+      [
+        "▁t",
+        "ut"
+      ],
+      [
+        "i",
+        "d"
+      ],
+      [
+        "ch",
+        "en"
+      ],
+      [
+        "ei",
+        "gen"
+      ],
+      [
+        "▁h",
+        "eiß"
+      ],
+      [
+        "▁G",
+        "erecht"
+      ],
+      [
+        "▁W",
+        "enn"
+      ],
+      [
+        "▁l",
+        "ehr"
+      ],
+      [
+        "▁F",
+        "rie"
+      ],
+      [
+        "ohn",
+        "e"
+      ],
+      [
+        "▁o",
+        "ffenbar"
+      ],
+      [
+        "▁komm",
+        "t"
+      ],
+      [
+        "▁Hoh",
+        "en"
+      ],
+      [
+        "g",
+        "et"
+      ],
+      [
+        "m",
+        "ann"
+      ],
+      [
+        "▁l",
+        "e"
+      ],
+      [
+        "▁Au",
+        "f"
+      ],
+      [
+        "prie",
+        "ster"
+      ],
+      [
+        "▁Teu",
+        "fel"
+      ],
+      [
+        "a",
+        "k"
+      ],
+      [
+        "▁",
+        "ohne"
+      ],
+      [
+        "▁H",
+        "eiden"
+      ],
+      [
+        "us",
+        ","
+      ],
+      [
+        "▁A",
+        "p"
+      ],
+      [
+        "ck",
+        "t"
+      ],
+      [
+        "b",
+        "ald"
+      ],
+      [
+        "▁W",
+        "ie"
+      ],
+      [
+        "▁ha",
+        "ben,"
+      ],
+      [
+        "▁f",
+        "ühr"
+      ],
+      [
+        "▁wer",
+        "den,"
+      ],
+      [
+        "▁sch",
+        "w"
+      ],
+      [
+        "▁ging",
+        "en"
+      ],
+      [
+        "k",
+        "eit,"
+      ],
+      [
+        "n",
+        "ach"
+      ],
+      [
+        "▁M",
+        "ar"
+      ],
+      [
+        "in",
+        "n"
+      ],
+      [
+        "▁hat",
+        "te,"
+      ],
+      [
+        "▁Z",
+        "eug"
+      ],
+      [
+        "▁fr",
+        "ag"
+      ],
+      [
+        "▁",
+        "ew"
+      ],
+      [
+        "▁E",
+        "hr"
+      ],
+      [
+        "▁f",
+        "iel"
+      ],
+      [
+        "d",
+        "es"
+      ],
+      [
+        "e",
+        "der"
+      ],
+      [
+        "o",
+        "g"
+      ],
+      [
+        "er",
+        "w"
+      ],
+      [
+        "▁S",
+        "e"
+      ],
+      [
+        "▁m",
+        "uß"
+      ],
+      [
+        "▁B",
+        "ar"
+      ],
+      [
+        "▁war",
+        "en,"
+      ],
+      [
+        "▁lie",
+        "be"
+      ],
+      [
+        ":",
+        "\n"
+      ],
+      [
+        "▁d",
+        "rei"
+      ],
+      [
+        "el",
+        "l"
+      ],
+      [
+        "▁ein",
+        "es"
+      ],
+      [
+        "▁E",
+        "in"
+      ],
+      [
+        "▁K",
+        "lei"
+      ],
+      [
+        "ör",
+        "t"
+      ],
+      [
+        "▁Her",
+        "z"
+      ],
+      [
+        "▁Stimm",
+        "e"
+      ],
+      [
+        "▁v",
+        "ier"
+      ],
+      [
+        "▁zu",
+        "vor"
+      ],
+      [
+        "▁W",
+        "ill"
+      ],
+      [
+        "▁U",
+        "ng"
+      ],
+      [
+        "or",
+        "n"
+      ],
+      [
+        "▁Jes",
+        "um"
+      ],
+      [
+        "▁steh",
+        "t"
+      ],
+      [
+        "▁Proph",
+        "eten"
+      ],
+      [
+        "h",
+        "al"
+      ],
+      [
+        "ei",
+        "g"
+      ],
+      [
+        "▁W",
+        "ein"
+      ],
+      [
+        "▁M",
+        "u"
+      ],
+      [
+        "▁L",
+        "icht"
+      ],
+      [
+        "▁et",
+        "w"
+      ],
+      [
+        "▁groß",
+        "e"
+      ],
+      [
+        "n",
+        "ung"
+      ],
+      [
+        "▁d",
+        "r"
+      ],
+      [
+        "▁w",
+        "ä"
+      ],
+      [
+        "▁er",
+        "sch"
+      ],
+      [
+        "eu",
+        "er"
+      ],
+      [
+        "▁M",
+        "än"
+      ],
+      [
+        "or",
+        "en"
+      ],
+      [
+        "▁A",
+        "m"
+      ],
+      [
+        "▁dem",
+        ","
+      ],
+      [
+        "▁l",
+        "eg"
+      ],
+      [
+        "▁Sch",
+        "iff"
+      ],
+      [
+        "▁sag",
+        "en"
+      ],
+      [
+        "ab",
+        "b"
+      ],
+      [
+        "mal",
+        "s"
+      ],
+      [
+        "▁pr",
+        "e"
+      ],
+      [
+        "▁Me",
+        "er"
+      ],
+      [
+        "g",
+        "eh"
+      ],
+      [
+        "o",
+        "ff"
+      ],
+      [
+        "et",
+        "e"
+      ],
+      [
+        "▁mein",
+        "en"
+      ],
+      [
+        "rie",
+        "f"
+      ],
+      [
+        "ft",
+        "ig"
+      ],
+      [
+        "▁Her",
+        "zen"
+      ],
+      [
+        "▁st",
+        "and"
+      ],
+      [
+        "sel",
+        "ben"
+      ],
+      [
+        "▁Ap",
+        "ost"
+      ],
+      [
+        "l",
+        "äu"
+      ],
+      [
+        "▁d",
+        "ien"
+      ],
+      [
+        "▁S",
+        "im"
+      ],
+      [
+        "▁ge",
+        "ben"
+      ],
+      [
+        "▁ver",
+        "f"
+      ],
+      [
+        "▁ges",
+        "ehen"
+      ],
+      [
+        "▁Gottes",
+        ","
+      ],
+      [
+        "▁Sie",
+        "he,"
+      ],
+      [
+        "h",
+        "m"
+      ],
+      [
+        "▁die",
+        "sen"
+      ],
+      [
+        "▁H",
+        "aupt"
+      ],
+      [
+        "▁ihr",
+        "er"
+      ],
+      [
+        "▁ges",
+        "t"
+      ],
+      [
+        "ing",
+        "en"
+      ],
+      [
+        "▁Vater",
+        ","
+      ],
+      [
+        "▁Wahr",
+        "heit"
+      ],
+      [
+        "▁wür",
+        "de"
+      ],
+      [
+        "r",
+        "t"
+      ],
+      [
+        "▁ge",
+        "kommen"
+      ],
+      [
+        "au",
+        "m"
+      ],
+      [
+        "▁t",
+        "ö"
+      ],
+      [
+        "▁werden",
+        ".\n"
+      ],
+      [
+        "▁Bl",
+        "ut"
+      ],
+      [
+        "g",
+        "es"
+      ],
+      [
+        "n",
+        "te"
+      ],
+      [
+        "▁Z",
+        "eich"
+      ],
+      [
+        "▁sch",
+        "l"
+      ],
+      [
+        "▁welch",
+        "es"
+      ],
+      [
+        "▁\"",
+        "D"
+      ],
+      [
+        "▁Was",
+        "ser"
+      ],
+      [
+        "▁gew",
+        "esen"
+      ],
+      [
+        "▁Sünd",
+        "e"
+      ],
+      [
+        "läu",
+        "b"
+      ],
+      [
+        "▁n",
+        "ehm"
+      ],
+      [
+        "▁ist",
+        "'s"
+      ],
+      [
+        "▁Sch",
+        "ul"
+      ],
+      [
+        "▁hin",
+        "ein"
+      ],
+      [
+        "ra",
+        "el"
+      ],
+      [
+        "▁kein",
+        "e"
+      ],
+      [
+        "▁erf",
+        "üll"
+      ],
+      [
+        "▁Is",
+        "rael"
+      ],
+      [
+        "▁Zeug",
+        "nis"
+      ],
+      [
+        "f",
+        "ahr"
+      ],
+      [
+        "ö",
+        "h"
+      ],
+      [
+        "▁G",
+        "r"
+      ],
+      [
+        "▁hat",
+        "ten"
+      ],
+      [
+        "▁o",
+        "b"
+      ],
+      [
+        "▁Wei",
+        "s"
+      ],
+      [
+        "▁sel",
+        "ig"
+      ],
+      [
+        "isch",
+        "en"
+      ],
+      [
+        "▁To",
+        "ten"
+      ],
+      [
+        "▁bes",
+        "ch"
+      ],
+      [
+        "▁Sim",
+        "on"
+      ],
+      [
+        "ei",
+        "m"
+      ],
+      [
+        "▁w",
+        "ohn"
+      ],
+      [
+        "▁G",
+        "al"
+      ],
+      [
+        "▁m",
+        "ö"
+      ],
+      [
+        "▁sein",
+        "es"
+      ],
+      [
+        "ing",
+        "e"
+      ],
+      [
+        "▁soll",
+        "en"
+      ],
+      [
+        "▁Ge",
+        "d"
+      ],
+      [
+        "▁heil",
+        "igen"
+      ],
+      [
+        "gel",
+        "ehr"
+      ],
+      [
+        "▁Schrift",
+        "gelehr"
+      ],
+      [
+        "▁Mu",
+        "tter"
+      ],
+      [
+        "u",
+        "cht"
+      ],
+      [
+        "▁dein",
+        "en"
+      ],
+      [
+        "▁gleich",
+        "wie"
+      ],
+      [
+        "▁Kne",
+        "cht"
+      ],
+      [
+        "i",
+        "a"
+      ],
+      [
+        "er",
+        "s"
+      ],
+      [
+        "▁w",
+        "en"
+      ],
+      [
+        "▁S",
+        "p"
+      ],
+      [
+        "▁W",
+        "o"
+      ],
+      [
+        "▁B",
+        "er"
+      ],
+      [
+        "sch",
+        "a"
+      ],
+      [
+        "▁L",
+        "ehr"
+      ],
+      [
+        "▁ver",
+        "st"
+      ],
+      [
+        "il",
+        "ä"
+      ],
+      [
+        "▁b",
+        "eg"
+      ],
+      [
+        "▁J",
+        "ahr"
+      ],
+      [
+        "ah",
+        "am"
+      ],
+      [
+        "▁als",
+        "bald"
+      ],
+      [
+        "und",
+        "en"
+      ],
+      [
+        "▁re",
+        "den"
+      ],
+      [
+        "br",
+        "aham"
+      ],
+      [
+        "▁gesand",
+        "t"
+      ],
+      [
+        "s",
+        "al"
+      ],
+      [
+        "u",
+        "hl"
+      ],
+      [
+        "st",
+        ","
+      ],
+      [
+        "et",
+        "h"
+      ],
+      [
+        "al",
+        "t"
+      ],
+      [
+        "▁welch",
+        "em"
+      ],
+      [
+        "▁soll",
+        "t"
+      ],
+      [
+        "▁unter",
+        "einander"
+      ],
+      [
+        "▁be",
+        "w"
+      ],
+      [
+        "▁Proph",
+        "et"
+      ],
+      [
+        "▁g",
+        "ere"
+      ],
+      [
+        "▁z",
+        "eug"
+      ],
+      [
+        "▁H",
+        "a"
+      ],
+      [
+        "▁aber",
+        "mals"
+      ],
+      [
+        "▁M",
+        "acht"
+      ],
+      [
+        "▁A",
+        "braham"
+      ],
+      [
+        "▁ver",
+        "w"
+      ],
+      [
+        "▁K",
+        "ra"
+      ],
+      [
+        "▁sag",
+        "en:"
+      ],
+      [
+        "▁dies",
+        "em"
+      ],
+      [
+        "▁Au",
+        "gen"
+      ],
+      [
+        "▁eur",
+        "en"
+      ],
+      [
+        "▁gan",
+        "ze"
+      ],
+      [
+        "d",
+        "igen"
+      ],
+      [
+        "e",
+        ";"
+      ],
+      [
+        "e",
+        "ch"
+      ],
+      [
+        "w",
+        "eil"
+      ],
+      [
+        "▁",
+        "Ü"
+      ],
+      [
+        "▁D",
+        "ien"
+      ],
+      [
+        "▁all",
+        "e,"
+      ],
+      [
+        "▁an",
+        ","
+      ],
+      [
+        "▁hat",
+        ".\n"
+      ],
+      [
+        "ge",
+        "b"
+      ],
+      [
+        "▁Herr",
+        "lich"
+      ],
+      [
+        "▁br",
+        "ach"
+      ],
+      [
+        "▁wä",
+        "re"
+      ],
+      [
+        "▁Gal",
+        "ilä"
+      ],
+      [
+        "a",
+        "ten"
+      ],
+      [
+        "k",
+        "t"
+      ],
+      [
+        "s",
+        "am"
+      ],
+      [
+        "s",
+        "et,"
+      ],
+      [
+        "▁s",
+        "uch"
+      ],
+      [
+        "▁g",
+        "ab"
+      ],
+      [
+        "▁h",
+        "ät"
+      ],
+      [
+        "▁n",
+        "eu"
+      ],
+      [
+        "▁ge",
+        "gen"
+      ],
+      [
+        "▁will",
+        "en"
+      ],
+      [
+        "▁Ju",
+        "d"
+      ],
+      [
+        "▁Gesch",
+        "le"
+      ],
+      [
+        "g",
+        "er"
+      ],
+      [
+        "h",
+        "eiß"
+      ],
+      [
+        "▁M",
+        "und"
+      ],
+      [
+        "▁wird",
+        ","
+      ],
+      [
+        "▁Heil",
+        "igen"
+      ],
+      [
+        "▁Hohen",
+        "priester"
+      ],
+      [
+        "ak",
+        "ob"
+      ],
+      [
+        "▁Apost",
+        "el"
+      ],
+      [
+        "▁",
+        "rü"
+      ],
+      [
+        "ei",
+        "d"
+      ],
+      [
+        "▁s",
+        "etz"
+      ],
+      [
+        "▁w",
+        "ei"
+      ],
+      [
+        "▁W",
+        "eg"
+      ],
+      [
+        "hr",
+        "en"
+      ],
+      [
+        "▁J",
+        "akob"
+      ],
+      [
+        "▁l",
+        "ä"
+      ],
+      [
+        "cht",
+        "ig"
+      ],
+      [
+        "▁Er",
+        "den"
+      ],
+      [
+        "ung",
+        ","
+      ],
+      [
+        "▁lie",
+        "ß"
+      ],
+      [
+        "lt",
+        "es"
+      ],
+      [
+        "▁etw",
+        "as"
+      ],
+      [
+        "▁sch",
+        "rie"
+      ],
+      [
+        "▁gesch",
+        "ehen"
+      ],
+      [
+        "isch",
+        "e"
+      ],
+      [
+        "g",
+        "t"
+      ],
+      [
+        "▁M",
+        "ose"
+      ],
+      [
+        "▁auf",
+        "erst"
+      ],
+      [
+        "▁f",
+        "rei"
+      ],
+      [
+        "▁sein",
+        ","
+      ],
+      [
+        "▁l",
+        "ang"
+      ],
+      [
+        "▁soll",
+        "st"
+      ],
+      [
+        "▁soll",
+        "te"
+      ],
+      [
+        "▁re",
+        "cht"
+      ],
+      [
+        "komm",
+        "en,"
+      ],
+      [
+        "d",
+        "ern"
+      ],
+      [
+        "ö",
+        "ll"
+      ],
+      [
+        "▁zu",
+        "s"
+      ],
+      [
+        "▁er",
+        "l"
+      ],
+      [
+        "eu",
+        "te"
+      ],
+      [
+        "▁in",
+        "s"
+      ],
+      [
+        "▁E",
+        "w"
+      ],
+      [
+        "▁M",
+        "ein"
+      ],
+      [
+        "▁auf",
+        ","
+      ],
+      [
+        "▁K",
+        "a"
+      ],
+      [
+        "▁geh",
+        "ört"
+      ],
+      [
+        "▁sah",
+        ","
+      ],
+      [
+        "▁unser",
+        "s"
+      ],
+      [
+        "öl",
+        "f"
+      ],
+      [
+        "▁pre",
+        "dig"
+      ],
+      [
+        "ä",
+        "ter"
+      ],
+      [
+        "▁S",
+        "pr"
+      ],
+      [
+        "▁er",
+        "mah"
+      ],
+      [
+        "▁D",
+        "es"
+      ],
+      [
+        "▁M",
+        "eist"
+      ],
+      [
+        "▁ihn",
+        ","
+      ],
+      [
+        "▁wir",
+        "st"
+      ],
+      [
+        "▁k",
+        "enn"
+      ],
+      [
+        "or",
+        "gen"
+      ],
+      [
+        "ern",
+        "e"
+      ],
+      [
+        "eh",
+        "en,"
+      ],
+      [
+        "▁I",
+        "st"
+      ],
+      [
+        "ann",
+        "t"
+      ],
+      [
+        "und",
+        "er"
+      ],
+      [
+        "▁Christ",
+        "um"
+      ],
+      [
+        "▁lie",
+        "b"
+      ],
+      [
+        "▁be",
+        "f"
+      ],
+      [
+        "▁be",
+        "k"
+      ],
+      [
+        "ra",
+        "ten"
+      ],
+      [
+        "▁tr",
+        "in"
+      ],
+      [
+        "▁Se",
+        "el"
+      ],
+      [
+        "▁Kra",
+        "ft"
+      ],
+      [
+        "w",
+        "en"
+      ],
+      [
+        "ie",
+        "ß"
+      ],
+      [
+        "▁er",
+        "kenn"
+      ],
+      [
+        "▁W",
+        "el"
+      ],
+      [
+        "eh",
+        "e"
+      ],
+      [
+        "▁F",
+        "euer"
+      ],
+      [
+        "ung",
+        "en"
+      ],
+      [
+        "▁Ge",
+        "fä"
+      ],
+      [
+        "▁To",
+        "d"
+      ],
+      [
+        "▁woll",
+        "te"
+      ],
+      [
+        "▁Werk",
+        "e"
+      ],
+      [
+        "▁Pharisä",
+        "er"
+      ],
+      [
+        "▁Gerecht",
+        "igkeit"
+      ],
+      [
+        "▁Zeich",
+        "en"
+      ],
+      [
+        "s",
+        ".\n"
+      ],
+      [
+        "ö",
+        "st"
+      ],
+      [
+        "▁G",
+        "leich"
+      ],
+      [
+        "▁sie",
+        ","
+      ],
+      [
+        "▁E",
+        "l"
+      ],
+      [
+        "ge",
+        "ben,"
+      ],
+      [
+        "▁Da",
+        "v"
+      ],
+      [
+        "▁be",
+        "d"
+      ],
+      [
+        "reu",
+        "z"
+      ],
+      [
+        "ru",
+        "cht"
+      ],
+      [
+        "pf",
+        "er"
+      ],
+      [
+        "▁Jüng",
+        "ern"
+      ],
+      [
+        "▁alles",
+        ","
+      ],
+      [
+        "▁empf",
+        "angen"
+      ],
+      [
+        "▁Stund",
+        "e"
+      ],
+      [
+        "▁Ehr",
+        "e"
+      ],
+      [
+        "a",
+        "st"
+      ],
+      [
+        "nd",
+        "en"
+      ],
+      [
+        "▁w",
+        "är"
+      ],
+      [
+        "▁da",
+        "h"
+      ],
+      [
+        "▁h",
+        "ier"
+      ],
+      [
+        "▁n",
+        "imm"
+      ],
+      [
+        "▁G",
+        "ericht"
+      ],
+      [
+        "▁er",
+        "w"
+      ],
+      [
+        "ach",
+        "e"
+      ],
+      [
+        "▁nicht",
+        ".\n"
+      ],
+      [
+        "tt",
+        "en,"
+      ],
+      [
+        "it",
+        "te"
+      ],
+      [
+        "▁f",
+        "ün"
+      ],
+      [
+        "▁F",
+        "üß"
+      ],
+      [
+        "▁ges",
+        "und"
+      ],
+      [
+        "▁j",
+        "en"
+      ],
+      [
+        "▁Sünd",
+        "en"
+      ],
+      [
+        "▁Ä",
+        "ltes"
+      ],
+      [
+        "▁Gemei",
+        "nde"
+      ],
+      [
+        "▁Ew",
+        "igkeit"
+      ],
+      [
+        "k",
+        "te"
+      ],
+      [
+        "▁",
+        "rief"
+      ],
+      [
+        "▁s",
+        "it"
+      ],
+      [
+        "▁z",
+        "og"
+      ],
+      [
+        "▁S",
+        "abb"
+      ],
+      [
+        "ig",
+        "keit,"
+      ],
+      [
+        "▁P",
+        "f"
+      ],
+      [
+        "is",
+        "sen"
+      ],
+      [
+        "▁Mensch",
+        "en,"
+      ],
+      [
+        "ck",
+        "en"
+      ],
+      [
+        "▁tr",
+        "at"
+      ],
+      [
+        "▁redet",
+        "e"
+      ],
+      [
+        "▁Dav",
+        "id"
+      ],
+      [
+        "g",
+        "leich"
+      ],
+      [
+        "l",
+        "eg"
+      ],
+      [
+        "▁die",
+        "weil"
+      ],
+      [
+        "▁S",
+        "el"
+      ],
+      [
+        "▁A",
+        "ng"
+      ],
+      [
+        "▁B",
+        "es"
+      ],
+      [
+        "▁ver",
+        "d"
+      ],
+      [
+        "▁Z",
+        "u"
+      ],
+      [
+        "aus",
+        "end"
+      ],
+      [
+        "r",
+        "ank"
+      ],
+      [
+        "w",
+        "ill"
+      ],
+      [
+        "z",
+        "eit"
+      ],
+      [
+        "▁H",
+        "off"
+      ],
+      [
+        "▁nicht",
+        ";"
+      ],
+      [
+        "▁f",
+        "ind"
+      ],
+      [
+        "▁f",
+        "reu"
+      ],
+      [
+        "▁Gott",
+        ".\n"
+      ],
+      [
+        "▁ver",
+        "sch"
+      ],
+      [
+        "▁ihm",
+        ".\n"
+      ],
+      [
+        "▁P",
+        "il"
+      ],
+      [
+        "ah",
+        "l"
+      ],
+      [
+        "▁Sch",
+        "a"
+      ],
+      [
+        "▁N",
+        "un"
+      ],
+      [
+        "▁Gottes",
+        ".\n"
+      ],
+      [
+        "▁las",
+        "set"
+      ],
+      [
+        "▁Herrlich",
+        "keit"
+      ],
+      [
+        "▁zus",
+        "amm"
+      ],
+      [
+        "n",
+        "t"
+      ],
+      [
+        "o",
+        "m"
+      ],
+      [
+        "▁die",
+        ","
+      ],
+      [
+        "▁er",
+        "h"
+      ],
+      [
+        "▁daß",
+        ","
+      ],
+      [
+        "▁f",
+        "olg"
+      ],
+      [
+        "ge",
+        "g"
+      ],
+      [
+        "▁St",
+        "ein"
+      ],
+      [
+        "▁dar",
+        "in"
+      ],
+      [
+        "▁Hä",
+        "nde"
+      ],
+      [
+        "▁Frie",
+        "den"
+      ],
+      [
+        "l",
+        "ä"
+      ],
+      [
+        "s",
+        "en.\n"
+      ],
+      [
+        "ü",
+        "st"
+      ],
+      [
+        "▁",
+        "eigen"
+      ],
+      [
+        "▁s",
+        "and"
+      ],
+      [
+        "▁ihr",
+        "em"
+      ],
+      [
+        "ag",
+        "e"
+      ],
+      [
+        "▁sein",
+        ".\n"
+      ],
+      [
+        "in",
+        "t"
+      ],
+      [
+        "▁ihm",
+        ","
+      ],
+      [
+        "eit",
+        "et"
+      ],
+      [
+        "▁St",
+        "uhl"
+      ],
+      [
+        "▁sag",
+        "te"
+      ],
+      [
+        "rü",
+        "b"
+      ],
+      [
+        "▁O",
+        "ber"
+      ],
+      [
+        "▁für",
+        "cht"
+      ],
+      [
+        "är",
+        "t"
+      ],
+      [
+        "▁Pil",
+        "at"
+      ],
+      [
+        "v",
+        "on"
+      ],
+      [
+        "ä",
+        "ng"
+      ],
+      [
+        "ö",
+        "ß"
+      ],
+      [
+        "▁u",
+        "ng"
+      ],
+      [
+        "ach",
+        "t,"
+      ],
+      [
+        "▁b",
+        "eh"
+      ],
+      [
+        "▁M",
+        "a"
+      ],
+      [
+        "▁mein",
+        "er"
+      ],
+      [
+        "▁sag",
+        "t"
+      ],
+      [
+        "▁gesch",
+        "ah"
+      ],
+      [
+        "▁ber",
+        "u"
+      ],
+      [
+        "▁jeg",
+        "licher"
+      ],
+      [
+        "▁Ältes",
+        "ten"
+      ],
+      [
+        "▁Hoff",
+        "nung"
+      ],
+      [
+        "h",
+        "eit,"
+      ],
+      [
+        "i",
+        "pp"
+      ],
+      [
+        "o",
+        "gen"
+      ],
+      [
+        "t",
+        ";"
+      ],
+      [
+        "ä",
+        "nd"
+      ],
+      [
+        "ei",
+        "ten"
+      ],
+      [
+        "es",
+        "icht"
+      ],
+      [
+        "▁er",
+        "k"
+      ],
+      [
+        "ig",
+        ","
+      ],
+      [
+        "▁T",
+        "rüb"
+      ],
+      [
+        "▁war",
+        ".\n"
+      ],
+      [
+        "▁es",
+        "sen"
+      ],
+      [
+        "▁über",
+        "an"
+      ],
+      [
+        "▁geh",
+        "e"
+      ],
+      [
+        "▁Her",
+        "o"
+      ],
+      [
+        "▁Sohn",
+        ","
+      ],
+      [
+        "▁dar",
+        "auf"
+      ],
+      [
+        "▁fün",
+        "f"
+      ],
+      [
+        "▁Ang",
+        "esicht"
+      ],
+      [
+        "▁",
+        "reich"
+      ],
+      [
+        "▁g",
+        "ut"
+      ],
+      [
+        "el",
+        "bst"
+      ],
+      [
+        "▁ge",
+        "g"
+      ],
+      [
+        "▁B",
+        "uß"
+      ],
+      [
+        "▁t",
+        "raten"
+      ],
+      [
+        "am",
+        "t"
+      ],
+      [
+        "▁sich",
+        ","
+      ],
+      [
+        "▁HERRN",
+        ","
+      ],
+      [
+        "▁be",
+        "z"
+      ],
+      [
+        "▁sel",
+        "ber"
+      ],
+      [
+        "▁dar",
+        "nach"
+      ],
+      [
+        "▁hör",
+        "en"
+      ],
+      [
+        "ul",
+        "dig"
+      ],
+      [
+        "▁unser",
+        "m"
+      ],
+      [
+        "aß",
+        "t"
+      ],
+      [
+        "äh",
+        "l"
+      ],
+      [
+        "▁Als",
+        "o"
+      ],
+      [
+        "▁Bro",
+        "t"
+      ],
+      [
+        "▁gem",
+        "acht"
+      ],
+      [
+        "▁verkünd",
+        "ig"
+      ],
+      [
+        "▁Trüb",
+        "sal"
+      ],
+      [
+        "a",
+        "z"
+      ],
+      [
+        "k",
+        "e"
+      ],
+      [
+        "ei",
+        "se"
+      ],
+      [
+        "ach",
+        "tet"
+      ],
+      [
+        "▁ge",
+        "d"
+      ],
+      [
+        "▁V",
+        "or"
+      ],
+      [
+        "▁t",
+        "at"
+      ],
+      [
+        "▁F",
+        "ür"
+      ],
+      [
+        "▁N",
+        "acht"
+      ],
+      [
+        "▁sch",
+        "rei"
+      ],
+      [
+        "▁R",
+        "icht"
+      ],
+      [
+        "▁woll",
+        "en"
+      ],
+      [
+        "▁r",
+        "ein"
+      ],
+      [
+        "▁Christi",
+        ","
+      ],
+      [
+        "get",
+        "an"
+      ],
+      [
+        "▁Pilat",
+        "us"
+      ],
+      [
+        "▁G",
+        "a"
+      ],
+      [
+        "▁z",
+        "er"
+      ],
+      [
+        "▁das",
+        "elbst"
+      ],
+      [
+        "▁ihn",
+        "en,"
+      ],
+      [
+        "au",
+        "ft"
+      ],
+      [
+        "▁l",
+        "ei"
+      ],
+      [
+        "in",
+        "stern"
+      ],
+      [
+        "▁F",
+        "rucht"
+      ],
+      [
+        "▁F",
+        "instern"
+      ],
+      [
+        "▁N",
+        "am"
+      ],
+      [
+        "▁j",
+        "etzt"
+      ],
+      [
+        "▁geh",
+        "en"
+      ],
+      [
+        "▁Ver",
+        "heiß"
+      ],
+      [
+        "▁wis",
+        "set,"
+      ],
+      [
+        "▁tun",
+        ","
+      ],
+      [
+        "ha",
+        "ftig"
+      ],
+      [
+        "ä",
+        "ch"
+      ],
+      [
+        "▁g",
+        "er"
+      ],
+      [
+        "▁ha",
+        "tten,"
+      ],
+      [
+        "or",
+        "ben"
+      ],
+      [
+        "▁A",
+        "b"
+      ],
+      [
+        "▁A",
+        "us"
+      ],
+      [
+        "▁sch",
+        "on"
+      ],
+      [
+        "▁R",
+        "u"
+      ],
+      [
+        "▁j",
+        "a"
+      ],
+      [
+        "etz",
+        "ten"
+      ],
+      [
+        "▁st",
+        "ar"
+      ],
+      [
+        "ul",
+        "d"
+      ],
+      [
+        "▁nah",
+        "e"
+      ],
+      [
+        "▁glau",
+        "b"
+      ],
+      [
+        "▁las",
+        "sen"
+      ],
+      [
+        "▁wand",
+        "eln"
+      ],
+      [
+        "▁zeug",
+        "te"
+      ],
+      [
+        "▁Finstern",
+        "is"
+      ],
+      [
+        "f",
+        "ang"
+      ],
+      [
+        "m",
+        "her"
+      ],
+      [
+        "s",
+        "ag"
+      ],
+      [
+        "ch",
+        "n"
+      ],
+      [
+        "ch",
+        "t,"
+      ],
+      [
+        "▁g",
+        "erecht"
+      ],
+      [
+        "▁zu",
+        ","
+      ],
+      [
+        "▁ha",
+        "be,"
+      ],
+      [
+        "as",
+        "sen"
+      ],
+      [
+        "▁T",
+        "ür"
+      ],
+      [
+        "eh",
+        "n"
+      ],
+      [
+        "ge",
+        "f"
+      ],
+      [
+        "▁Wei",
+        "ber"
+      ],
+      [
+        "▁Ph",
+        "il"
+      ],
+      [
+        "▁aller",
+        "lei"
+      ],
+      [
+        "all",
+        "en"
+      ],
+      [
+        "▁heiß",
+        "t"
+      ],
+      [
+        "▁Män",
+        "ner"
+      ],
+      [
+        "▁Ged",
+        "uld"
+      ],
+      [
+        "▁rü",
+        "hm"
+      ],
+      [
+        "u",
+        "g"
+      ],
+      [
+        "ü",
+        "s"
+      ],
+      [
+        "▁ihr",
+        ","
+      ],
+      [
+        "▁ich",
+        ","
+      ],
+      [
+        "or",
+        "d"
+      ],
+      [
+        "or",
+        "sam"
+      ],
+      [
+        "▁B",
+        "ö"
+      ],
+      [
+        "▁Z",
+        "w"
+      ],
+      [
+        "▁Z",
+        "orn"
+      ],
+      [
+        "gen",
+        "d"
+      ],
+      [
+        "▁dein",
+        "er"
+      ],
+      [
+        "▁dein",
+        "em"
+      ],
+      [
+        "▁Geist",
+        ","
+      ],
+      [
+        "▁Wor",
+        "te"
+      ],
+      [
+        "▁geb",
+        "oren"
+      ],
+      [
+        "▁wis",
+        "sen"
+      ],
+      [
+        "▁Geb",
+        "o"
+      ],
+      [
+        "▁Schriftgelehr",
+        "ten"
+      ],
+      [
+        "▁gere",
+        "det"
+      ],
+      [
+        "▁Galilä",
+        "a"
+      ],
+      [
+        "▁Füß",
+        "e"
+      ],
+      [
+        "▁zusamm",
+        "en"
+      ],
+      [
+        "m",
+        "e"
+      ],
+      [
+        "▁da",
+        "von"
+      ],
+      [
+        "▁h",
+        "ä"
+      ],
+      [
+        "▁h",
+        "ieß"
+      ],
+      [
+        "et",
+        ".\n"
+      ],
+      [
+        "▁G",
+        "el"
+      ],
+      [
+        "▁z",
+        "ieh"
+      ],
+      [
+        "▁W",
+        "ar"
+      ],
+      [
+        "▁W",
+        "elch"
+      ],
+      [
+        "▁ihn",
+        ".\n"
+      ],
+      [
+        "▁k",
+        "on"
+      ],
+      [
+        "▁T",
+        "ier"
+      ],
+      [
+        "▁A",
+        "ll"
+      ],
+      [
+        "omm",
+        "en"
+      ],
+      [
+        "und",
+        "ert"
+      ],
+      [
+        "▁Haus",
+        "e"
+      ],
+      [
+        "▁mach",
+        "en"
+      ],
+      [
+        "▁Gleich",
+        "nis"
+      ],
+      [
+        "az",
+        "ar"
+      ],
+      [
+        "o",
+        "ß"
+      ],
+      [
+        "t",
+        "nis"
+      ],
+      [
+        "▁G",
+        "ut"
+      ],
+      [
+        "▁G",
+        "lie"
+      ],
+      [
+        "▁S",
+        "ol"
+      ],
+      [
+        "▁H",
+        "ur"
+      ],
+      [
+        "▁auf",
+        "erw"
+      ],
+      [
+        "▁du",
+        ","
+      ],
+      [
+        "▁all",
+        "em"
+      ],
+      [
+        "▁K",
+        "l"
+      ],
+      [
+        "▁mir",
+        ","
+      ],
+      [
+        "ur",
+        "cht"
+      ],
+      [
+        "▁hör",
+        "ten,"
+      ],
+      [
+        "▁wis",
+        "sen,"
+      ],
+      [
+        "▁Kne",
+        "chte"
+      ],
+      [
+        "kenn",
+        "tnis"
+      ],
+      [
+        "▁tu",
+        "e"
+      ],
+      [
+        "▁gu",
+        "ten"
+      ],
+      [
+        "eder",
+        "mann"
+      ],
+      [
+        "▁Meist",
+        "er,"
+      ],
+      [
+        "▁auferw",
+        "e"
+      ],
+      [
+        "m",
+        "it"
+      ],
+      [
+        "▁s",
+        "aß"
+      ],
+      [
+        "▁s",
+        "amt"
+      ],
+      [
+        "▁a",
+        "r"
+      ],
+      [
+        "▁w",
+        "uß"
+      ],
+      [
+        "▁n",
+        "ur"
+      ],
+      [
+        "▁b",
+        "lie"
+      ],
+      [
+        "ben",
+        "d"
+      ],
+      [
+        "▁ge",
+        "geben,"
+      ],
+      [
+        "au",
+        "fen"
+      ],
+      [
+        "▁f",
+        "u"
+      ],
+      [
+        "▁f",
+        "and"
+      ],
+      [
+        "▁ver",
+        "b"
+      ],
+      [
+        "▁uns",
+        "ern"
+      ],
+      [
+        "▁mein",
+        "es"
+      ],
+      [
+        "▁hin",
+        "auf"
+      ],
+      [
+        "▁Tag",
+        "en"
+      ],
+      [
+        "▁Volk",
+        ","
+      ],
+      [
+        "▁her",
+        "r"
+      ],
+      [
+        "▁Auf",
+        "erst"
+      ],
+      [
+        "▁beg",
+        "ab"
+      ],
+      [
+        "▁dah",
+        "in"
+      ],
+      [
+        "▁beru",
+        "fen"
+      ],
+      [
+        "a",
+        "t,"
+      ],
+      [
+        "g",
+        "lich"
+      ],
+      [
+        "r",
+        "et"
+      ],
+      [
+        "ö",
+        "tt"
+      ],
+      [
+        "▁",
+        "ru"
+      ],
+      [
+        "▁s",
+        "en"
+      ],
+      [
+        "▁S",
+        "at"
+      ],
+      [
+        "▁er",
+        "'s"
+      ],
+      [
+        "eu",
+        "ch"
+      ],
+      [
+        "▁b",
+        "ö"
+      ],
+      [
+        "ben",
+        ".\n"
+      ],
+      [
+        "▁ge",
+        "kommen,"
+      ],
+      [
+        "▁k",
+        "lein"
+      ],
+      [
+        "▁f",
+        "erne"
+      ],
+      [
+        "▁B",
+        "uch"
+      ],
+      [
+        "rü",
+        "ß"
+      ],
+      [
+        "▁hör",
+        "te"
+      ],
+      [
+        "▁nie",
+        "der"
+      ],
+      [
+        "▁seh",
+        "en,"
+      ],
+      [
+        "▁Will",
+        "en"
+      ],
+      [
+        "▁leg",
+        "te"
+      ],
+      [
+        "▁Wel",
+        "t,"
+      ],
+      [
+        "d",
+        "em"
+      ],
+      [
+        "n",
+        "ehm"
+      ],
+      [
+        "o",
+        "ll"
+      ],
+      [
+        "s",
+        "es"
+      ],
+      [
+        "er",
+        ".\n"
+      ],
+      [
+        "▁w",
+        "eil"
+      ],
+      [
+        "▁da",
+        "zu"
+      ],
+      [
+        "▁l",
+        "os"
+      ],
+      [
+        "ter",
+        ","
+      ],
+      [
+        "▁ver",
+        "g"
+      ],
+      [
+        "▁F",
+        "urcht"
+      ],
+      [
+        "▁Jesus",
+        ","
+      ],
+      [
+        "▁j",
+        "edermann"
+      ],
+      [
+        "▁will",
+        "en,"
+      ],
+      [
+        "▁alle",
+        "zeit"
+      ],
+      [
+        "▁nahm",
+        "en"
+      ],
+      [
+        "▁Jahr",
+        "e"
+      ],
+      [
+        "▁Sabb",
+        "at"
+      ],
+      [
+        "m",
+        "en"
+      ],
+      [
+        "▁g",
+        "r"
+      ],
+      [
+        "▁er",
+        "sten"
+      ],
+      [
+        "▁sie",
+        "h"
+      ],
+      [
+        "▁ge",
+        "k"
+      ],
+      [
+        "▁E",
+        "nde"
+      ],
+      [
+        "▁F",
+        "r"
+      ],
+      [
+        "▁F",
+        "el"
+      ],
+      [
+        "▁uns",
+        ","
+      ],
+      [
+        "▁geh",
+        "t"
+      ],
+      [
+        "▁lie",
+        "ßen"
+      ],
+      [
+        "▁O",
+        "der"
+      ],
+      [
+        "▁solch",
+        "e"
+      ],
+      [
+        "▁groß",
+        "er"
+      ],
+      [
+        "▁Wahr",
+        "lich,"
+      ],
+      [
+        "▁eur",
+        "em"
+      ],
+      [
+        "▁An",
+        "fang"
+      ],
+      [
+        "▁br",
+        "ing"
+      ],
+      [
+        "▁gan",
+        "z"
+      ],
+      [
+        "▁Freu",
+        "de"
+      ],
+      [
+        "▁Bar",
+        "mher"
+      ],
+      [
+        "läub",
+        "ig"
+      ],
+      [
+        "▁Geschle",
+        "cht"
+      ],
+      [
+        "▁Phil",
+        "ipp"
+      ],
+      [
+        "e",
+        "ge"
+      ],
+      [
+        "n",
+        "er,"
+      ],
+      [
+        "ä",
+        "d"
+      ],
+      [
+        "ch",
+        "er"
+      ],
+      [
+        "▁i",
+        "r"
+      ],
+      [
+        "▁S",
+        "am"
+      ],
+      [
+        "em",
+        "al"
+      ],
+      [
+        "ng",
+        "nis"
+      ],
+      [
+        "▁W",
+        "ind"
+      ],
+      [
+        "as",
+        "set"
+      ],
+      [
+        "or",
+        "t"
+      ],
+      [
+        "▁T",
+        "eil"
+      ],
+      [
+        "▁B",
+        "e"
+      ],
+      [
+        "▁Er",
+        "kenntnis"
+      ],
+      [
+        "▁hör",
+        "te,"
+      ],
+      [
+        "▁Die",
+        "ser"
+      ],
+      [
+        "▁verk",
+        "l"
+      ],
+      [
+        "▁ew",
+        "ige"
+      ],
+      [
+        "▁Weis",
+        "heit"
+      ],
+      [
+        "▁wen",
+        "ig"
+      ],
+      [
+        "▁Gefä",
+        "ngnis"
+      ],
+      [
+        "▁sand",
+        "te"
+      ],
+      [
+        "▁Auferst",
+        "eh"
+      ],
+      [
+        "f",
+        "t,"
+      ],
+      [
+        "ö",
+        "t"
+      ],
+      [
+        "▁s",
+        "ehr"
+      ],
+      [
+        "ie",
+        "d"
+      ],
+      [
+        "▁g",
+        "i"
+      ],
+      [
+        "▁h",
+        "ing"
+      ],
+      [
+        "▁h",
+        "iel"
+      ],
+      [
+        "▁ihr",
+        ":"
+      ],
+      [
+        "▁wir",
+        ","
+      ],
+      [
+        "▁A",
+        "bend"
+      ],
+      [
+        "▁V",
+        "äter"
+      ],
+      [
+        "▁P",
+        "rie"
+      ],
+      [
+        "▁R",
+        "at"
+      ],
+      [
+        "▁lie",
+        "ben"
+      ],
+      [
+        "▁sah",
+        "en"
+      ],
+      [
+        "▁gan",
+        "zen"
+      ],
+      [
+        "▁werde",
+        ".\n"
+      ],
+      [
+        "▁blei",
+        "bt"
+      ],
+      [
+        "▁Re",
+        "de"
+      ],
+      [
+        "▁leben",
+        "dig"
+      ],
+      [
+        "▁Klei",
+        "der"
+      ],
+      [
+        "▁ersch",
+        "ien"
+      ],
+      [
+        "fahr",
+        "en"
+      ],
+      [
+        "scha",
+        "ft"
+      ],
+      [
+        "▁Buß",
+        "e"
+      ],
+      [
+        "f",
+        "ür"
+      ],
+      [
+        "n",
+        "ten"
+      ],
+      [
+        "▁",
+        "Ö"
+      ],
+      [
+        "▁",
+        "är"
+      ],
+      [
+        "▁w",
+        "eder"
+      ],
+      [
+        "▁G",
+        "er"
+      ],
+      [
+        "▁S",
+        "al"
+      ],
+      [
+        "ber",
+        "g"
+      ],
+      [
+        "au",
+        "ber"
+      ],
+      [
+        "▁l",
+        "au"
+      ],
+      [
+        "▁B",
+        "et"
+      ],
+      [
+        "sch",
+        "en"
+      ],
+      [
+        "▁L",
+        "ü"
+      ],
+      [
+        "▁mit",
+        "ten"
+      ],
+      [
+        "▁K",
+        "rie"
+      ],
+      [
+        "▁F",
+        "ei"
+      ],
+      [
+        "▁Sch",
+        "l"
+      ],
+      [
+        "▁sei",
+        ","
+      ],
+      [
+        "▁sind",
+        ".\n"
+      ],
+      [
+        "▁O",
+        "r"
+      ],
+      [
+        "▁Volk",
+        "s"
+      ],
+      [
+        "▁zw",
+        "ölf"
+      ],
+      [
+        "▁gro",
+        "ßen"
+      ],
+      [
+        "sel",
+        "be"
+      ],
+      [
+        "▁empf",
+        "ang"
+      ],
+      [
+        "▁gest",
+        "orben"
+      ],
+      [
+        "gleich",
+        "en"
+      ],
+      [
+        "int",
+        "emal"
+      ],
+      [
+        "▁Hero",
+        "des"
+      ],
+      [
+        "b",
+        "ei"
+      ],
+      [
+        "f",
+        "er"
+      ],
+      [
+        "i",
+        "ck"
+      ],
+      [
+        "y",
+        "p"
+      ],
+      [
+        "ü",
+        "ßen"
+      ],
+      [
+        "▁s",
+        "ter"
+      ],
+      [
+        "▁S",
+        "eh"
+      ],
+      [
+        "▁m",
+        "acht"
+      ],
+      [
+        "▁un",
+        "v"
+      ],
+      [
+        "al",
+        "ten"
+      ],
+      [
+        "▁I",
+        "n"
+      ],
+      [
+        "▁N",
+        "ach"
+      ],
+      [
+        "▁\"",
+        "I"
+      ],
+      [
+        "▁ward",
+        ","
+      ],
+      [
+        "▁kein",
+        "en"
+      ],
+      [
+        "▁gew",
+        "es"
+      ],
+      [
+        "os",
+        "sen"
+      ],
+      [
+        "▁hal",
+        "ten"
+      ],
+      [
+        "▁Dien",
+        "er"
+      ],
+      [
+        "▁hät",
+        "te"
+      ],
+      [
+        "▁lang",
+        "e"
+      ],
+      [
+        "▁Hur",
+        "er"
+      ],
+      [
+        "k",
+        "ne"
+      ],
+      [
+        "en",
+        "det"
+      ],
+      [
+        "▁s",
+        "ünd"
+      ],
+      [
+        "▁a",
+        "cht"
+      ],
+      [
+        "es",
+        "sen"
+      ],
+      [
+        "ein",
+        "en"
+      ],
+      [
+        "▁n",
+        "äm"
+      ],
+      [
+        "eu",
+        "gen"
+      ],
+      [
+        "ach",
+        "en"
+      ],
+      [
+        "▁k",
+        "und"
+      ],
+      [
+        "▁f",
+        "lei"
+      ],
+      [
+        "▁unter",
+        "t"
+      ],
+      [
+        "▁über",
+        "w"
+      ],
+      [
+        "▁haben",
+        ".\n"
+      ],
+      [
+        "▁komm",
+        "t,"
+      ],
+      [
+        "▁Geist",
+        "es"
+      ],
+      [
+        "▁Tag",
+        "es"
+      ],
+      [
+        "▁her",
+        "aus"
+      ],
+      [
+        "▁Christus",
+        ","
+      ],
+      [
+        "▁Heil",
+        "ig"
+      ],
+      [
+        "▁Am",
+        "en.\n"
+      ],
+      [
+        "▁verf",
+        "ühr"
+      ],
+      [
+        "▁überan",
+        "twortet"
+      ],
+      [
+        "▁gr",
+        "öß"
+      ],
+      [
+        "f",
+        "l"
+      ],
+      [
+        "ü",
+        "d"
+      ],
+      [
+        "▁da",
+        "mit"
+      ],
+      [
+        "▁h",
+        "eim"
+      ],
+      [
+        "▁er",
+        "z"
+      ],
+      [
+        "▁er",
+        "ste"
+      ],
+      [
+        "▁H",
+        "ei"
+      ],
+      [
+        "▁ich",
+        "'s"
+      ],
+      [
+        "▁k",
+        "äm"
+      ],
+      [
+        "▁t",
+        "eil"
+      ],
+      [
+        "be",
+        ".\n"
+      ],
+      [
+        "▁P",
+        "re"
+      ],
+      [
+        "▁wird",
+        "'s"
+      ],
+      [
+        "▁lie",
+        "ber"
+      ],
+      [
+        "▁komm",
+        "en,"
+      ],
+      [
+        "▁Vater",
+        "s"
+      ],
+      [
+        "▁dich",
+        ","
+      ],
+      [
+        "▁Himmel",
+        ","
+      ],
+      [
+        "▁Glau",
+        "be"
+      ],
+      [
+        "▁Dar",
+        "nach"
+      ],
+      [
+        "▁glau",
+        "ben"
+      ],
+      [
+        "▁vers",
+        "amm"
+      ],
+      [
+        "▁Ü",
+        "b"
+      ],
+      [
+        "▁War",
+        "um"
+      ],
+      [
+        "▁Sol",
+        "ch"
+      ],
+      [
+        "▁Aufersteh",
+        "ung"
+      ],
+      [
+        "f",
+        "olg"
+      ],
+      [
+        "ü",
+        "cht"
+      ],
+      [
+        "ü",
+        "ck"
+      ],
+      [
+        "▁",
+        "ehe"
+      ],
+      [
+        "ei",
+        "s"
+      ],
+      [
+        "▁w",
+        "eg"
+      ],
+      [
+        "es",
+        "t,"
+      ],
+      [
+        "▁b",
+        "itt"
+      ],
+      [
+        "▁M",
+        "it"
+      ],
+      [
+        "▁T",
+        "i"
+      ],
+      [
+        "ing",
+        ","
+      ],
+      [
+        "ehr",
+        "t"
+      ],
+      [
+        "▁kam",
+        ","
+      ],
+      [
+        "▁O",
+        "hren"
+      ],
+      [
+        "▁Wor",
+        "t,"
+      ],
+      [
+        "▁Die",
+        "se"
+      ],
+      [
+        "dig",
+        "t"
+      ],
+      [
+        "▁Bl",
+        "ind"
+      ],
+      [
+        "▁Geb",
+        "ot"
+      ],
+      [
+        "▁Gew",
+        "alt"
+      ],
+      [
+        "▁jeg",
+        "lichen"
+      ],
+      [
+        "▁wahr",
+        "lich"
+      ],
+      [
+        "▁Frie",
+        "de"
+      ],
+      [
+        "▁\"D",
+        "u"
+      ],
+      [
+        "▁verw",
+        "under"
+      ],
+      [
+        "▁Ü",
+        "ber"
+      ],
+      [
+        "▁Ka",
+        "is"
+      ],
+      [
+        "▁Sel",
+        "ig"
+      ],
+      [
+        "▁Verheiß",
+        "ung"
+      ],
+      [
+        "▁Sat",
+        "an"
+      ],
+      [
+        "i",
+        "ß"
+      ],
+      [
+        "i",
+        "as"
+      ],
+      [
+        "ö",
+        "tet"
+      ],
+      [
+        "er",
+        "k"
+      ],
+      [
+        "▁d",
+        "en,"
+      ],
+      [
+        "▁der",
+        "selben"
+      ],
+      [
+        "▁S",
+        "on"
+      ],
+      [
+        "▁er",
+        "g"
+      ],
+      [
+        "▁den",
+        "en"
+      ],
+      [
+        "▁D",
+        "inge"
+      ],
+      [
+        "▁J",
+        "ose"
+      ],
+      [
+        "mm",
+        "er"
+      ],
+      [
+        "▁f",
+        "al"
+      ],
+      [
+        "▁f",
+        "ing"
+      ],
+      [
+        "▁B",
+        "r"
+      ],
+      [
+        "▁B",
+        "ist"
+      ],
+      [
+        "▁L",
+        "amm"
+      ],
+      [
+        "▁V",
+        "on"
+      ],
+      [
+        "▁Z",
+        "eit,"
+      ],
+      [
+        "▁St",
+        "ät"
+      ],
+      [
+        "▁HERRN",
+        ".\n"
+      ],
+      [
+        "▁dies",
+        "es"
+      ],
+      [
+        "pf",
+        "leg"
+      ],
+      [
+        "▁Die",
+        "s"
+      ],
+      [
+        "▁sah",
+        "en,"
+      ],
+      [
+        "▁Kind",
+        "lein"
+      ],
+      [
+        "▁Wahr",
+        "lich"
+      ],
+      [
+        "▁hast",
+        ","
+      ],
+      [
+        "▁seh",
+        "et"
+      ],
+      [
+        "ericht",
+        "et"
+      ],
+      [
+        "▁ang",
+        "en"
+      ],
+      [
+        "▁dr",
+        "itten"
+      ],
+      [
+        "▁ist's",
+        ","
+      ],
+      [
+        "▁Seel",
+        "e"
+      ],
+      [
+        "▁Krie",
+        "g"
+      ],
+      [
+        "▁Solch",
+        "es"
+      ],
+      [
+        ")",
+        ","
+      ],
+      [
+        "a",
+        "j"
+      ],
+      [
+        "a",
+        "ben"
+      ],
+      [
+        "a",
+        "tt"
+      ],
+      [
+        "f",
+        "en,"
+      ],
+      [
+        "z",
+        "t"
+      ],
+      [
+        "ü",
+        "chtig"
+      ],
+      [
+        "▁",
+        "rei"
+      ],
+      [
+        "ei",
+        "cht"
+      ],
+      [
+        "▁s",
+        "ech"
+      ],
+      [
+        "▁G",
+        "ro"
+      ],
+      [
+        "▁S",
+        "amen"
+      ],
+      [
+        "▁W",
+        "ege"
+      ],
+      [
+        "▁b",
+        "au"
+      ],
+      [
+        "▁A",
+        "l"
+      ],
+      [
+        "▁L",
+        "e"
+      ],
+      [
+        "▁L",
+        "u"
+      ],
+      [
+        "e,",
+        "\n"
+      ],
+      [
+        "▁K",
+        "rank"
+      ],
+      [
+        "▁t",
+        "reu"
+      ],
+      [
+        "▁ges",
+        "etzt"
+      ],
+      [
+        "▁N",
+        "icht"
+      ],
+      [
+        "▁hin",
+        "f"
+      ],
+      [
+        "eg",
+        "t"
+      ],
+      [
+        "▁komm",
+        "e"
+      ],
+      [
+        "▁\"",
+        "S"
+      ],
+      [
+        "▁bin",
+        ","
+      ],
+      [
+        "▁seid",
+        ","
+      ],
+      [
+        "▁get",
+        "r"
+      ],
+      [
+        "▁get",
+        "ötet"
+      ],
+      [
+        "auf",
+        "e"
+      ],
+      [
+        "▁weiß",
+        ","
+      ],
+      [
+        "▁tu",
+        "t,"
+      ],
+      [
+        "▁lehr",
+        "te"
+      ],
+      [
+        "▁Sp",
+        "eise"
+      ],
+      [
+        "▁brach",
+        "ten"
+      ],
+      [
+        "▁setz",
+        "te"
+      ],
+      [
+        "▁wei",
+        "ter"
+      ],
+      [
+        "▁trin",
+        "k"
+      ],
+      [
+        "geg",
+        "angen"
+      ],
+      [
+        "▁Barmher",
+        "z"
+      ],
+      [
+        "▁Philipp",
+        "us"
+      ],
+      [
+        "▁näm",
+        "lich"
+      ],
+      [
+        "▁untert",
+        "an"
+      ],
+      [
+        "▁Jose",
+        "ph"
+      ],
+      [
+        "d",
+        "on"
+      ],
+      [
+        "i",
+        "a,"
+      ],
+      [
+        "o",
+        "ben"
+      ],
+      [
+        "s",
+        "er,"
+      ],
+      [
+        "ch",
+        "te,"
+      ],
+      [
+        "▁g",
+        "eist"
+      ],
+      [
+        "▁h",
+        "ern"
+      ],
+      [
+        "▁G",
+        "rie"
+      ],
+      [
+        "▁G",
+        "ere"
+      ],
+      [
+        "▁S",
+        "il"
+      ],
+      [
+        "▁S",
+        "inn"
+      ],
+      [
+        "el",
+        "te"
+      ],
+      [
+        "▁b",
+        "ald"
+      ],
+      [
+        "▁sie",
+        ".\n"
+      ],
+      [
+        "ten",
+        ";"
+      ],
+      [
+        "▁ge",
+        "be"
+      ],
+      [
+        "▁k",
+        "l"
+      ],
+      [
+        "▁f",
+        "or"
+      ],
+      [
+        "▁T",
+        "ro"
+      ],
+      [
+        "▁A",
+        "s"
+      ],
+      [
+        "▁L",
+        "asset"
+      ],
+      [
+        "▁ver",
+        "t"
+      ],
+      [
+        "▁des",
+        ","
+      ],
+      [
+        "lich",
+        "es"
+      ],
+      [
+        "▁St",
+        "äd"
+      ],
+      [
+        "▁sei",
+        ".\n"
+      ],
+      [
+        "▁N",
+        "azar"
+      ],
+      [
+        "▁sag",
+        "en,"
+      ],
+      [
+        "▁hin",
+        "ab"
+      ],
+      [
+        "at",
+        "z"
+      ],
+      [
+        "at",
+        "ur"
+      ],
+      [
+        "▁viel",
+        "en"
+      ],
+      [
+        "▁Himmel",
+        "reich"
+      ],
+      [
+        "▁Ju",
+        "den,"
+      ],
+      [
+        "▁Ver",
+        "d"
+      ],
+      [
+        "▁To",
+        "de"
+      ],
+      [
+        "▁Sünd",
+        "er"
+      ],
+      [
+        "▁selbst",
+        ","
+      ],
+      [
+        "äu",
+        "p"
+      ],
+      [
+        "▁heil",
+        "ig"
+      ],
+      [
+        "▁mach",
+        "te"
+      ],
+      [
+        "▁wür",
+        "den"
+      ],
+      [
+        "▁Darum",
+        ","
+      ],
+      [
+        "▁Jerusalem",
+        ","
+      ],
+      [
+        "▁Land",
+        "e"
+      ],
+      [
+        "▁verl",
+        "eug"
+      ],
+      [
+        "▁ander",
+        "en"
+      ],
+      [
+        "▁frag",
+        "ten"
+      ],
+      [
+        "▁tö",
+        "tet"
+      ],
+      [
+        "▁Spr",
+        "icht"
+      ],
+      [
+        "▁nimm",
+        "t"
+      ],
+      [
+        "▁Ö",
+        "l"
+      ],
+      [
+        "▁Barmherz",
+        "igkeit"
+      ],
+      [
+        ")",
+        "\n"
+      ],
+      [
+        "d",
+        "u"
+      ],
+      [
+        "o",
+        "nd"
+      ],
+      [
+        "o",
+        "ck"
+      ],
+      [
+        "r",
+        "er"
+      ],
+      [
+        "ie",
+        "g"
+      ],
+      [
+        "ein",
+        "e"
+      ],
+      [
+        "▁S",
+        "eid"
+      ],
+      [
+        "▁D",
+        "em"
+      ],
+      [
+        "▁ihn",
+        "en.\n"
+      ],
+      [
+        "au",
+        "ch"
+      ],
+      [
+        "▁f",
+        "ahr"
+      ],
+      [
+        "▁f",
+        "anden"
+      ],
+      [
+        "▁T",
+        "h"
+      ],
+      [
+        "▁L",
+        "ä"
+      ],
+      [
+        "▁L",
+        "eu"
+      ],
+      [
+        "▁ver",
+        "geben"
+      ],
+      [
+        "▁K",
+        "reuz"
+      ],
+      [
+        "▁j",
+        "üd"
+      ],
+      [
+        "▁will",
+        ","
+      ],
+      [
+        "il",
+        "d"
+      ],
+      [
+        "▁habe",
+        ".\n"
+      ],
+      [
+        "komm",
+        "en.\n"
+      ],
+      [
+        "▁Glau",
+        "ben,"
+      ],
+      [
+        "▁Jesu",
+        ","
+      ],
+      [
+        "▁steh",
+        "en"
+      ],
+      [
+        "▁Geb",
+        "et"
+      ],
+      [
+        "▁Freu",
+        "nd"
+      ],
+      [
+        "▁Johann",
+        "es,"
+      ],
+      [
+        "net",
+        "e"
+      ],
+      [
+        "▁gu",
+        "te"
+      ],
+      [
+        "▁offenbar",
+        "t"
+      ],
+      [
+        "▁führ",
+        "te"
+      ],
+      [
+        "▁Mar",
+        "ia"
+      ],
+      [
+        "▁frag",
+        "te"
+      ],
+      [
+        "▁Lehr",
+        "e"
+      ],
+      [
+        "▁Mund",
+        "e"
+      ],
+      [
+        "▁Ober",
+        "sten"
+      ],
+      [
+        "▁\"I",
+        "ch"
+      ],
+      [
+        "▁Hurer",
+        "ei"
+      ],
+      [
+        "▁Krieg",
+        "s"
+      ],
+      [
+        "f",
+        "en.\n"
+      ],
+      [
+        "g",
+        "en,"
+      ],
+      [
+        "g",
+        "yp"
+      ],
+      [
+        "n",
+        "ab"
+      ],
+      [
+        "r",
+        "g"
+      ],
+      [
+        "r",
+        "ig"
+      ],
+      [
+        "en",
+        "."
+      ],
+      [
+        "▁w",
+        "or"
+      ],
+      [
+        "▁z",
+        "ogen"
+      ],
+      [
+        "▁ha",
+        "bt,"
+      ],
+      [
+        "▁b",
+        "l"
+      ],
+      [
+        "▁b",
+        "at"
+      ],
+      [
+        "▁ge",
+        "z"
+      ],
+      [
+        "▁E",
+        "he"
+      ],
+      [
+        "▁f",
+        "l"
+      ],
+      [
+        "▁T",
+        "est"
+      ],
+      [
+        "▁T",
+        "ische"
+      ],
+      [
+        "▁l",
+        "eiden"
+      ],
+      [
+        "eh",
+        "l"
+      ],
+      [
+        "▁F",
+        "est"
+      ],
+      [
+        "▁F",
+        "üßen"
+      ],
+      [
+        "▁uns",
+        "re"
+      ],
+      [
+        "▁sch",
+        "uldig"
+      ],
+      [
+        "▁durch",
+        "s"
+      ],
+      [
+        "ör",
+        "t,"
+      ],
+      [
+        "▁nun",
+        ","
+      ],
+      [
+        "▁Wei",
+        "be"
+      ],
+      [
+        "▁O",
+        "pfer"
+      ],
+      [
+        "▁dar",
+        "an"
+      ],
+      [
+        "▁gen",
+        "annt"
+      ],
+      [
+        "▁woll",
+        "t"
+      ],
+      [
+        "▁heil",
+        "ige"
+      ],
+      [
+        "▁gewor",
+        "den,"
+      ],
+      [
+        "▁voll",
+        "endet"
+      ],
+      [
+        "▁Weib",
+        ","
+      ],
+      [
+        "▁ber",
+        "eit"
+      ],
+      [
+        "▁Ä",
+        "gyp"
+      ],
+      [
+        "▁geschrieben",
+        ":"
+      ],
+      [
+        "▁Schw",
+        "ert"
+      ],
+      [
+        "fä",
+        "lt"
+      ],
+      [
+        "▁kön",
+        "nen"
+      ],
+      [
+        "▁Gerecht",
+        "igkeit,"
+      ],
+      [
+        "▁Bar",
+        "nab"
+      ],
+      [
+        "▁Klei",
+        "d"
+      ],
+      [
+        "▁sit",
+        "zen"
+      ],
+      [
+        "▁Gut",
+        "es"
+      ],
+      [
+        "▁Son",
+        "ne"
+      ],
+      [
+        "▁hinf",
+        "ort"
+      ],
+      [
+        "▁Nazar",
+        "eth"
+      ],
+      [
+        "▁Test",
+        "amen"
+      ],
+      [
+        "d",
+        "a"
+      ],
+      [
+        "f",
+        "ühr"
+      ],
+      [
+        "i",
+        "tter"
+      ],
+      [
+        "l",
+        "ing"
+      ],
+      [
+        "r",
+        "en"
+      ],
+      [
+        "u",
+        "t,"
+      ],
+      [
+        "ß",
+        "ig"
+      ],
+      [
+        "ä",
+        "us"
+      ],
+      [
+        "ä",
+        "chtig"
+      ],
+      [
+        "ü",
+        "ste"
+      ],
+      [
+        "nd",
+        "e,"
+      ],
+      [
+        "ei",
+        "ge"
+      ],
+      [
+        "▁s",
+        "amm"
+      ],
+      [
+        "▁w",
+        "ein"
+      ],
+      [
+        "▁S",
+        "teh"
+      ],
+      [
+        "▁W",
+        "it"
+      ],
+      [
+        "▁W",
+        "eh"
+      ],
+      [
+        "▁D",
+        "en"
+      ],
+      [
+        "▁ihr",
+        "'s"
+      ],
+      [
+        "▁L",
+        "ohn"
+      ],
+      [
+        "eh",
+        "en.\n"
+      ],
+      [
+        "▁ver",
+        "z"
+      ],
+      [
+        "▁wer",
+        "de,"
+      ],
+      [
+        "▁F",
+        "rei"
+      ],
+      [
+        "▁sch",
+        "a"
+      ],
+      [
+        "▁mir",
+        ":"
+      ],
+      [
+        "▁st",
+        "ell"
+      ],
+      [
+        "▁hör",
+        "en,"
+      ],
+      [
+        "▁get",
+        "auft"
+      ],
+      [
+        "▁Brü",
+        "dern"
+      ],
+      [
+        "ze",
+        "don"
+      ],
+      [
+        "ot",
+        "h"
+      ],
+      [
+        "▁spricht",
+        ":"
+      ],
+      [
+        "▁Gew",
+        "issen"
+      ],
+      [
+        "▁Gemei",
+        "nden"
+      ],
+      [
+        "▁leben",
+        "digen"
+      ],
+      [
+        "▁dr",
+        "itte"
+      ],
+      [
+        "▁Schul",
+        "e"
+      ],
+      [
+        "▁erfüll",
+        "t"
+      ],
+      [
+        "▁lä",
+        "ßt"
+      ],
+      [
+        "▁verd",
+        "amm"
+      ],
+      [
+        "▁eigen",
+        "en"
+      ],
+      [
+        "rüß",
+        "et"
+      ],
+      [
+        "▁gewes",
+        "en,"
+      ],
+      [
+        "▁Hei",
+        "den,"
+      ],
+      [
+        "\"",
+        ","
+      ],
+      [
+        "b",
+        "es"
+      ],
+      [
+        "e",
+        "gen"
+      ],
+      [
+        "i",
+        "on"
+      ],
+      [
+        "m",
+        "ehr"
+      ],
+      [
+        "ä",
+        "ll"
+      ],
+      [
+        "▁",
+        "ehr"
+      ],
+      [
+        "▁s",
+        "ä"
+      ],
+      [
+        "▁g",
+        "rü"
+      ],
+      [
+        "▁er",
+        ":"
+      ],
+      [
+        "▁er",
+        "st"
+      ],
+      [
+        "▁W",
+        "olk"
+      ]
+    ]
+  }
+}

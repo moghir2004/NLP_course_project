@@ -2,6 +2,7 @@ from tokenizers.implementations.sentencepiece_bpe import SentencePieceBPETokeniz
 
 from traitement_corpus import dataset
 
+# Constante pour changer une fois pour tout les tokenizers
 VOCAB_SIZE = 32000
 
 # initialiser différents tokenizers pour différentes langues
@@ -12,10 +13,12 @@ french_tokenizer = SentencePieceBPETokenizer()
 german_tokenizer = SentencePieceBPETokenizer()
 
 
+# pour avoir chaque verset dans chaque langue
 def verse_iterator(dataset, language):
     yield from dataset[language]
 
 
+# entraînement des différents tokenizers de chaque langue
 arabic_tokenizer.train_from_iterator(
     verse_iterator(dataset, "Arabic"),
     vocab_size=VOCAB_SIZE,
@@ -41,8 +44,15 @@ german_tokenizer.train_from_iterator(
     vocab_size=VOCAB_SIZE,
     special_tokens=["[UNK]", "[CLS]", "[SEP]", "[PAD]", "[MASK]"],
 )
-arabic_tokenizer.save_model("tokenizers", "arabic_32k")
-english_tokenizer.save_model("tokenizers", "english_32k")
-finnish_tokenizer.save_model("tokenizers", "finnish_32k")
-french_tokenizer.save_model("tokenizers", "french_32k")
-german_tokenizer.save_model("tokenizers", "german_32k")
+# enregistrement des résultats pour ne pas le relancer à chaque fois
+arabic_tokenizer.save_model("tokenizers", "arabic_2k")
+english_tokenizer.save_model("tokenizers", "english_2k")
+finnish_tokenizer.save_model("tokenizers", "finnish_2k")
+french_tokenizer.save_model("tokenizers", "french_2k")
+german_tokenizer.save_model("tokenizers", "german_2k")
+
+french_tokenizer.save("tokenizers/french_2k.json")
+german_tokenizer.save("tokenizers/german_2k.json")
+english_tokenizer.save("tokenizers/english_2k.json")
+finnish_tokenizer.save("tokenizers/finnish_2k.json")
+arabic_tokenizer.save("tokenizers/arabic_2k.json")
