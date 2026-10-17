@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 
+from datasets import Dataset
+
 # les IDs pour le nouveau testament
 NOUVEAU_TESTAMENT = {
     "b.MAT",
@@ -66,3 +68,15 @@ filtered_corpus = {
     language: {verse_id: corpus[verse_id] for verse_id in sorted(shared_ids)}
     for language, corpus in corpuses.items()
 }
+
+shared_ids = sorted(shared_ids)
+dataset_dict = {
+    "verse_id": shared_ids,
+    "english": [filtered_corpus["english"][id] for id in shared_ids],
+    "french": [filtered_corpus["french"][id] for id in shared_ids],
+    "german": [filtered_corpus["german"][id] for id in shared_ids],
+    "finnish": [filtered_corpus["german"][id] for id in shared_ids],
+    "arabic": [filtered_corpus["arabic"][id] for id in shared_ids],
+}
+# on peut finalement n'importer que cela (voir le fichier BPE_tokenizer.py)
+dataset = Dataset.from_dict(dataset_dict)

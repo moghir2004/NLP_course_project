@@ -1,19 +1,20 @@
-from datasets import Dataset
 from tokenizers import Tokenizer
 from tokenizers.models import BPE
+from tokenizers.pre_tokenizers import Whitespace
+from tokenizers.trainers import BpeTrainer
 
-from traitement_corpus import filtered_corpus, shared_ids
+from traitement_corpus import dataset
 
-shared_ids = sorted(shared_ids)
-dataset_dict = {
-    "verse_id": shared_ids,
-    "english": [filtered_corpus["english"][id] for id in shared_ids],
-    "french": [filtered_corpus["french"][id] for id in shared_ids],
-    "german": [filtered_corpus["german"][id] for id in shared_ids],
-    "finnish": [filtered_corpus["german"][id] for id in shared_ids],
-    "arabic": [filtered_corpus["arabic"][id] for id in shared_ids],
-}
+french_tokenizer_2k = Tokenizer(BPE(unk_token="[UNK]"))
+trainer = BpeTrainer(
+    vocab_size=2000, special_tokens=["[UNK]", "[CLS]", "[SEP]", "[PAD]", "[MASK]"]
+)
+french_tokenizer_2k.pre_tokenizer = Whitespace()
 
-dataset = Dataset.from_dict(dataset_dict)
-french_tokenizer = Tokenizer(BPE(unk_token="[UNK]"))
-print(dataset[2])
+
+def french_verse_iterator(dataset):
+    yield from dataset["french"]
+
+
+french_tokenizer_2k.train_from_iterator(french_verse_iterator(dataset), trainer)
+print(french_tokenizer_2k.get_vocab_size())
