@@ -23,9 +23,12 @@ for language,langcode in {"Arabic":"","English":"en","Finnish":"fi","French":"fr
         for (w,c) in raw_whitespace_tokenized_freqranks:
             f.write(w+" "+str(c)+"\n")
     
-    if language != "Arabic":
+    if True: 
         if verbose : print(f"Tokenizing with Spacy and computing frequency ranks for {language}")
-        nlp = spacy.load(f"{langcode}_core_{"web" if langcode=="en" else "news"}_sm", disable=["parser", "ner"])
+        if language == "Arabic":
+            nlp = spacy.blank("ar")
+        else:
+            nlp = spacy.load(f"{langcode}_core_{"web" if langcode=="en" else "news"}_sm", disable=["parser", "ner"])
         spacy_freqs = Counter([t.lower_ for t in nlp(raw_text) if not (t.is_punct or t.is_space)])
         spacy_freqranks = sorted( [(w,c) for w,c in spacy_freqs.items()], key = lambda pair:pair[1], reverse=True )
         with open(os.path.join(os.curdir,"freqranks",f"{language}_spacy"), "w", encoding="utf-8") as f:
