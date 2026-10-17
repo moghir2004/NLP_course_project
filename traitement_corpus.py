@@ -71,11 +71,16 @@ filtered_corpus = {
 shared_ids = sorted(shared_ids)
 dataset_dict = {
     "verse_id": shared_ids,
-    "English": [filtered_corpus["English"][id] for id in shared_ids],
-    "French": [filtered_corpus["French"][id] for id in shared_ids],
-    "German": [filtered_corpus["German"][id] for id in shared_ids],
-    "Finnish": [filtered_corpus["Finnish"][id] for id in shared_ids],
-    "Arabic": [filtered_corpus["Arabic"][id] for id in shared_ids],
+    "English": [filtered_corpus["English"][id]+"\n" for id in shared_ids],
+    "French": [filtered_corpus["French"][id]+"\n" for id in shared_ids],
+    "German": [filtered_corpus["German"][id]+"\n" for id in shared_ids],
+    "Finnish": [filtered_corpus["Finnish"][id]+"\n" for id in shared_ids],
+    "Arabic": [filtered_corpus["Arabic"][id]+"\n" for id in shared_ids],
 }
+
+for language in languages:
+    with open(os.path.join(os.curdir,"treated_corpus",f"{language}.txt"),"w",encoding="utf-8") as f:
+        f.writelines(dataset_dict[language])
+
 # on peut finalement n'importer que cela (voir le fichier BPE_tokenizer.py)
 dataset = Dataset.from_dict(dataset_dict)
