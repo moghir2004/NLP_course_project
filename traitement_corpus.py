@@ -1,4 +1,6 @@
 import xml.etree.ElementTree as ET
+import os
+
 
 # les IDs pour le nouveau testament
 NOUVEAU_TESTAMENT = {
@@ -51,18 +53,28 @@ def extract_new_testament(path):
                 verses[verse_id] = text
     return verses
 
+languages = ["French", "English", "Arabic", "Finnish", "German"]
 
-files = {
-    "french": "./bibles/French.xml",
-    "english": "./bibles/English.xml",
-    "arabic": "./bibles/Arabic.xml",
-    "finnish": "./bibles/Finnish.xml",
-    "german": "./bibles/German.xml",
-}
 
-corpuses = {language: extract_new_testament(path) for language, path in files.items()}
-shared_ids = set.intersection(*(set(corpus) for corpus in corpuses.values()))
+original_files = {language : os.path.join(os.curdir,"bibles",f"{language}.xml") for language in languages}
+
+corpuses = {language: extract_new_testament(path) for language, path in original_files.items()}
+shared_ids = set.intersection(*(set(corpus) for corpus in corpuses.values())) #explication?
 filtered_corpus = {
     language: {verse_id: corpus[verse_id] for verse_id in sorted(shared_ids)}
     for language, corpus in corpuses.items()
 }
+
+for language in languages:
+    with open( os.path.join(os.curdir,"treated_corpus",f"{language}.txt") ) as f:
+    
+
+
+
+
+
+
+
+
+
+
