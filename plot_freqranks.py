@@ -17,22 +17,41 @@ def load_freqranks(path):
     return freqranks
 
 
-def plot_freqranks(freqranks, label, output_path):
-    ranks = range(1, len(freqranks) + 1)
-    frequencies = [frequency for _, frequency in freqranks]
-
+def plot_freqranks(freqranks_dict, title, output_path):
     plt.figure(figsize=(10, 6))
-    plt.loglog(ranks, frequencies, label=label)
+    for label, freqranks in freqranks_dict.items():
+        ranks = range(1, len(freqranks) + 1)
+        frequencies = [frequency for _, frequency in freqranks]
+        plt.loglog(ranks, frequencies, label=label)
+
     plt.xlabel("Frequency rank")
     plt.ylabel("Token Frequency")
-    plt.title(f"Zipf distribution - {label}")
+    plt.title(title)
     plt.legend()
-    plt.grid(True, which="both")
-    plt.tight_layout()
     plt.savefig(output_path, dpi=300)
     plt.close()
 
 
-for file in FREQ_DIR.iterdir():
-    freqranks = load_freqranks(file)
-    plot_freqranks(freqranks, label=file.stem, output_path=f"./figures/{file.stem}.png")
+languages = ["English", "French", "German", "Finnish", "Arabic"]
+for language in languages:
+
+    files = [
+        f"{language}_whitespace_raw.txt",
+        f"{language}_whitespace_lowercased.txt",
+        f"{language}_xlmr.txt",
+        f"{language}_bpe_2k.txt",
+        f"{language}_bpe_8k.txt",
+        f"{language}_bpe_32k.txt",
+    ]
+
+    freqranks_dict = {
+        file.removesuffix(".txt").replace(f"{language}_", ""): load_freqranks(
+            FREQ_DIR / file
+        )
+        for file in files
+    }
+    plot_freqranks(
+        freqranks_dict,
+        title=f"{language}: tokenizer comparison",
+        output_path=f"./figures/{language}_comparison.png",
+    )
