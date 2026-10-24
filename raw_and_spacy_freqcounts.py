@@ -19,7 +19,7 @@ for language,langcode in {"Arabic":"","English":"en","Finnish":"fi","French":"fr
     raw_text = " ".join(corpus[language])
     raw_freqs = Counter(raw_text.split(" "))
     raw_whitespace_tokenized_freqranks = sorted( [(w,c) for w,c in raw_freqs.items()], key = lambda pair:pair[1], reverse=True )
-    with open(os.path.join(os.curdir,"freqranks",f"{language}_whitespace_raw"),"w",encoding="utf-8") as f:
+    with open(os.path.join(os.curdir,"freqranks",f"{language}_whitespace_raw.txt"),"w",encoding="utf-8") as f:
         for (w,c) in raw_whitespace_tokenized_freqranks:
             f.write(w+" "+str(c)+"\n")
     
@@ -31,14 +31,14 @@ for language,langcode in {"Arabic":"","English":"en","Finnish":"fi","French":"fr
             nlp = spacy.load(f"{langcode}_core_{"web" if langcode=="en" else "news"}_sm", disable=["parser", "ner"])
         spacy_freqs = Counter([t.lower_ for t in nlp(raw_text) if not (t.is_punct or t.is_space)])
         spacy_freqranks = sorted( [(w,c) for w,c in spacy_freqs.items()], key = lambda pair:pair[1], reverse=True )
-        with open(os.path.join(os.curdir,"freqranks",f"{language}_spacy"), "w", encoding="utf-8") as f:
+        with open(os.path.join(os.curdir,"freqranks",f"{language}_spacy.txt"), "w", encoding="utf-8") as f:
             for (w,c) in raw_whitespace_tokenized_freqranks:
                 f.write(w+" "+str(c)+"\n")
     
     if verbose : print(f"Whitespace‐tokenizing lowercased text and computing frequency ranks for {language}\n")
     lowercase_freqs = Counter(" ".join(corpus[language]).lower().split(" "))
     lowercased_whitespace_tokenized_freqranks = sorted( [(w,c) for w,c in lowercase_freqs.items()], key = lambda pair:pair[1], reverse=True )
-    with open(os.path.join(os.curdir,"freqranks",f"{language}_whitespace_lowercased"),"w",encoding="utf-8") as f:
+    with open(os.path.join(os.curdir,"freqranks",f"{language}_whitespace_lowercased.txt"),"w",encoding="utf-8") as f:
         for (w,c) in lowercased_whitespace_tokenized_freqranks:
             f.write(w+" "+str(c)+"\n")
 

@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 FREQ_DIR = Path("freqranks")
 Path("./figures").mkdir(parents=True, exist_ok=True)
 
+languages = ["Arabic","English","Finnish","French","German"]
+tokenizers = ["_bpe_2k","_bpe_8k","_bpe_32k","_spacy","_whitespace_lowercased","_whitespace_raw","_xmlr"]
 
 def load_freqranks(path):
     freqranks = []
@@ -22,7 +24,7 @@ def plot_freqranks(freqranks, label, output_path):
     frequencies = [frequency for _, frequency in freqranks]
 
     plt.figure(figsize=(10, 6))
-    plt.loglog(ranks, frequencies, label=label)
+    plt.loglog(ranks, frequencies, label=label, marker=".", linestyle = "None", markersize=2)
     plt.xlabel("Frequency rank")
     plt.ylabel("Token Frequency")
     plt.title(f"Zipf distribution - {label}")
@@ -36,3 +38,6 @@ def plot_freqranks(freqranks, label, output_path):
 for file in FREQ_DIR.iterdir():
     freqranks = load_freqranks(file)
     plot_freqranks(freqranks, label=file.stem, output_path=f"./figures/{file.stem}.png")
+
+def plot_freqranks_perlang(language):
+    
