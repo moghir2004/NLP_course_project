@@ -55,13 +55,19 @@ def extract_new_testament(path):
                 verses[verse_id] = text
     return verses
 
+
 languages = ["French", "English", "Arabic", "Finnish", "German"]
 
 
-original_files = {language : os.path.join(os.curdir,"bibles",f"{language}.xml") for language in languages}
+original_files = {
+    language: os.path.join(os.curdir, "bibles", f"{language}.xml")
+    for language in languages
+}
 
-corpuses = {language: extract_new_testament(path) for language, path in original_files.items()}
-shared_ids = set.intersection(*(set(corpus) for corpus in corpuses.values())) 
+corpuses = {
+    language: extract_new_testament(path) for language, path in original_files.items()
+}
+shared_ids = set.intersection(*(set(corpus) for corpus in corpuses.values()))
 filtered_corpus = {
     language: {verse_id: corpus[verse_id] for verse_id in sorted(shared_ids)}
     for language, corpus in corpuses.items()
@@ -71,15 +77,19 @@ filtered_corpus = {
 shared_ids = sorted(shared_ids)
 dataset_dict = {
     "verse_id": shared_ids,
-    "English": [filtered_corpus["English"][id]+"\n" for id in shared_ids],
-    "French": [filtered_corpus["French"][id]+"\n" for id in shared_ids],
-    "German": [filtered_corpus["German"][id]+"\n" for id in shared_ids],
-    "Finnish": [filtered_corpus["Finnish"][id]+"\n" for id in shared_ids],
-    "Arabic": [filtered_corpus["Arabic"][id]+"\n" for id in shared_ids],
+    "English": [filtered_corpus["English"][id] + "\n" for id in shared_ids],
+    "French": [filtered_corpus["French"][id] + "\n" for id in shared_ids],
+    "German": [filtered_corpus["German"][id] + "\n" for id in shared_ids],
+    "Finnish": [filtered_corpus["Finnish"][id] + "\n" for id in shared_ids],
+    "Arabic": [filtered_corpus["Arabic"][id] + "\n" for id in shared_ids],
 }
 
 for language in languages:
-    with open(os.path.join(os.curdir,"treated_corpus",f"{language}.txt"),"w",encoding="utf-8") as f:
+    with open(
+        os.path.join(os.curdir, "treated_corpus", f"{language}.txt"),
+        "w",
+        encoding="utf-8",
+    ) as f:
         f.writelines(dataset_dict[language])
 
 # on peut finalement n'importer que cela (voir le fichier BPE_tokenizer.py)
